@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wix Resources Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menu {
+            padding: 40px 80px;
+            border-bottom: 2px solid #eee;
+        }
+        .menu-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #888;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 30px;
+        }
+        .menu-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+        }
+        .menu-content div {
+            flex: 1;
+            padding: 10px;
+        }
+        .menu-content h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .menu-content p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .menu-content h3:hover {
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-header">
+            <span>Explore</span>
+            <span>Support</span>
+            <span>Tools</span>
+        </div>
+        <div class="menu-content">
+            <div>
+                <h3 onclick="location.href='#'">Wix Blog</h3>
+                <p>Read the latest industry tips and trends.</p>
+                <h3 onclick="location.href='#'">AI features</h3>
+                <p>Discover all the ways to create and grow with AI.</p>
+                <h3 onclick="location.href='#'">Web design inspiration</h3>
+                <p>Explore designs by other Wix users.</p>
+            </div>
+            <div>
+                <h3 onclick="location.href='#'">Help Center</h3>
+                <p>Find the answers and support you need.</p>
+                <h3 onclick="location.href='#'">Hire a professional</h3>
+                <p>Get expert help with your site & business.</p>
+            </div>
+            <div>
+                <h3 onclick="location.href='#'">Logo Maker</h3>
+                <p>Create a custom logo for your brand.</p>
+                <h3 onclick="location.href='#'">Business Name Generator</h3>
+                <p>Get name ideas for your business.</p>
+                <h3 onclick="location.href='#'">Free business tools</h3>
+                <p>Explore tools to help you run & grow your business.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

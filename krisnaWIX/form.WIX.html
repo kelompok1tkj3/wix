@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Wix Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            flex-direction: column;
+        }
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .form-container {
+            flex: 2;
+            text-align: center;
+            padding-right: 20px;
+        }
+        .social-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background: #0073ff;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            min-width: 180px;
+        }
+        .social-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        .google {
+            background: #4285F4;
+            display: flex;
+            align-items: center;
+        }
+        .facebook {
+            background: #3B5998;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">WIX</div>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <p>Already have an account? <a href="#">Log In</a></p>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="email" placeholder="Confirm email" required>
+            <input type="password" placeholder="Choose a password" required>
+            <input type="password" placeholder="Confirm password" required>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </div>
+    <div class="social-container">
+        <a href="#" class="social-btn google">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo"> Continue with Google
+        </a>
+        <a href="#" class="social-btn facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo"> Continue with Facebook
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

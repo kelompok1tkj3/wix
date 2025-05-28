@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Templates</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .search-bar {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar input {
+      width: 60%;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .nav {
+      margin: 30px auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1100px;
+    }
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-item {
+      position: relative;
+      cursor: pointer;
+    }
+
+    /* Panah hanya untuk nav-left dan nav-right yang Collections */
+    .nav-left .nav-item > a::after,
+    .nav-right .nav-item.collections > a::after {
+      content: " ▼";
+      font-size: 12px;
+      margin-left: 4px;
+      color: #888;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      position: relative;
+    }
+
+    .nav a:hover {
+      background-color: #e0e0e0;
+    }
+
+    .nav-right .nav-item:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -12px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 20px;
+      border-right: 1px solid #ccc;
+    }
+
+    .dropdown-text {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease;
+      font-size: 14px;
+      color: #555;
+      padding: 0 8px;
+    }
+
+    .nav-item.active .dropdown-text {
+      max-height: 50px;
+      margin-top: 5px;
+    }
+
+    .templates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .template-card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .template-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .template-card .card-body {
+      padding: 15px;
+    }
+
+    .template-card .card-title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pick the Website Template You Love</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search all templates..." />
+    </div>
+  </header>
+
+  <div class="nav">
+    <!-- Menu kiri -->
+    <div class="nav-left">
+      <div class="nav-item">
+        <a href="#">Business</a>
+        <div class="dropdown-text">Coming soon</div>
+      </div>
+      <div class="nav-item">
+        <a href="#">Store</a>
+        <div class="dropdown-text">Coming soon</div>
+      </div>
+      <div class="nav-item">
+        <a href="#">Creative</a>
+        <div class="dropdown-text">Coming soon</div>
+      </div>
+      <div class="nav-item">
+        <a href="#">Community</a>
+        <div class="dropdown-text">Coming soon</div>
+      </div>
+      <div class="nav-item">
+        <a href="#">Blog</a>
+        <div class="dropdown-text">Coming soon</div>
+      </div>
+    </div>
+
+    <!-- Menu kanan -->
+    <div class="nav-right">
+      <div class="nav-item">
+        <a href="#">All</a>
+        <div class="dropdown-text">Coming soon</div>
+      </div>
+      <div class="nav-item">
+        <a href="#">Blank Templates</a>
+        <div class="dropdown-text">Coming soon</div>
+      </div>
+      <div class="nav-item collections">
+        <a href="#">Collections</a>
+        <div class="dropdown-text">Coming soon</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="templates">
+    <div class="template-card">
+      <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/d2591075eb6c3771cd2195c846fc57866d6f3a73336f85d152586c6f0c0f29431649695988731.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/d2591075eb6c3771cd2195c846fc57866d6f3a73336f85d152586c6f0c0f29431649695988731.webp" alt="Under Construction" />
+      <div class="card-body">
+        <div class="card-title">Under Construction</div>
+      </div>
+    </div>
+    <div class="template-card">
+      <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/312331f257f7cebd3c91084f82d26badefb8af8962318eabdefd71166b275dea1645354693930.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/312331f257f7cebd3c91084f82d26badefb8af8962318eabdefd71166b275dea1645354693930.webp" alt="Eyebrow Studio" />
+      <div class="card-body">
+        <div class="card-title">Eyebrow Studio</div>
+      </div>
+    </div>
+    <div class="template-card">
+      <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/930c7858f25ab4b509c2c7642926e551ce31d5ab621f3d49e6251daed6cd8c511683021255495.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/930c7858f25ab4b509c2c7642926e551ce31d5ab621f3d49e6251daed6cd8c511683021255495.webp" alt="Beauty Salon" />
+      <div class="card-body">
+        <div class="card-title">Beauty Salon</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const items = document.querySelectorAll('.nav-item');
+
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        items.forEach(i => {
+          if (i !== item) {
+            i.classList.remove('active');
+          }
+        });
+
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
