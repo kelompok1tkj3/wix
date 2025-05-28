@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder - Create a Free Website In Minutes | Wix.com</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 500;
+        }
+
+        .hero-subtitle {
+            font-size: 3rem;
+            font-weight: 400;
+        }
+
+        .btn-black {
+            background-color: #000;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0.75rem 2rem;
+            border-radius: 2rem;
+        }
+
+        .btn-black:hover {
+            background-color: #000;
+            color: white;
+        }
+
+        /* Menampilkan dropdown saat hover */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Hilangkan delay animasi Bootstrap */
+        .dropdown-menu {
+            transition: none !important;
+        }
+
+        .header-section {
+            padding: 2rem 0;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .description-text {
+            color: white;
+            line-height: 1.6;
+        }
+
+        .link-text {
+            color: white;
+            text-decoration: underline;
+        }
+
+
+        .category-tab {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
+
+        .category-tab.active {
+            font-weight: 600;
+        }
+
+        .category-tab.active::after {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            right: 1rem;
+            bottom: 0;
+            height: 2px;
+            background-color: white;
+        }
+
+        .template-card {
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            height: 400px;
+            background-color: white;
+        }
+
+        .template-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .template-link {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background-color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .template-link i {
+            color: #333;
+            font-size: 16px;
+        }
+
+        .explore-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            border-bottom: 1px solid white;
+            padding-bottom: 2px;
+        }
+
+        .explore-link i {
+            margin-left: 0.5rem;
+        }
+
+        /* Horizontal scroll for templates */
+        .template-scroll-container {
+            display: flex;
+            overflow-x: auto;
+            padding: 1rem 0;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            /* For Firefox */
+        }
+
+        .template-scroll-container::-webkit-scrollbar {
+            display: none;
+            /* For Chrome, Safari and Opera */
+        }
+
+        .template-scroll-item {
+            flex: 0 0 auto;
+            width: 450px;
+            margin-right: 1rem;
+        }
+
+        .template-scroll-item:last-child {
+            margin-right: 0;
+        }
+
+        .heading-container {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px 30px 20px;
+        }
+
+        .plan-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 50px 20px;
+        }
+
+        .plan-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .recommended-badge {
+            background-color: #ffb266;
+            color: black;
+        }
+
+        .plan-content {
+            padding: 20px;
+            color: black;
+            text-align: center;
+        }
+
+        .plan-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .plan-feature {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        .plan-feature span:first-child {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                    <g fill="#000" clip-path="url(#Logo_svg__a)">
+                        <path
+                            d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Product dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button">
+                            Product
+                        </a>
+                        <div class="mega-dropdown dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="row"> <!-- Baris utama untuk Creation dan Business -->
+                                            <!-- Kolom Creation -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">CREATION</div>
+                                                <div class="menu-item">
+                                                    <h4>Website design</h4>
+                                                    <p>Create your site with intuitive design features.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Website templates</h4>
+                                                    <p>Choose from 900+ website templates.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>AI website builder</h4>
+                                                    <p>Create your site in no time with AI.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom Business -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">BUSINESS</div>
+                                                <div class="menu-item">
+                                                    <h4>eCommerce</h4>
+                                                    <p>Run & grow your eCommerce website.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Scheduling</h4>
+                                                    <p>Manage appointments, staff & clients.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Restaurant</h4>
+                                                    <p>Manage your menus, orders, and reservations.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom tambahan (Blog dll) -->
+                                            <div class="col-4">
+                                                <div class="menu-item">
+                                                    <h4>Blog</h4>
+                                                    <p>Share ideas & grow your traffic.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Portfolio</h4>
+                                                    <p>Showcase your work with an online portfolio.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 sidebar">
+                                        <div class="dropdown-header">ESSENTIALS</div>
+                                        <div class="menu-item">
+                                            <h4>Domain names</h4>
+                                            <p>Buy & register a domain for your website.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Web hosting</h4>
+                                            <p>Get secure & reliable website hosting.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Website security</h4>
+                                            <p>Get enterprise-grade security for your site.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Solutions dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button">
+                            Solutions
+                        </a>
+                    </li>
+
+                    <!-- Resources dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button">
+                            Resources
+                        </a>
+                    </li>
+
+                    <!-- Pricing -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                </ul>
+
+                <!-- Right side of navbar -->
+                <div class="d-flex align-items-center">
+                    <!-- Wixel -->
+                    <a class="nav-link me-3" href="#">Wixel</a>
+
+                    <!-- Wix Studio -->
+                    <a class="nav-link me-3" href="#">Wix Studio</a>
+
+                    <!-- Enterprise -->
+                    <a class="nav-link me-3" href="#">Enterprise</a>
+
+                    <!-- Globe icon -->
+                    <a class="nav-link me-3" href="#"><i class="fas fa-globe"></i></a>
+
+                    <!-- Log In -->
+                    <a class="nav-link me-3" href="login.html">Log In</a>
+
+                    <!-- Get Started button -->
+                    <button class="btn btn-get-started">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">eCommerce</a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+
+                    <!-- Start dropdown -->
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Start
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">eCommerce Website</a></li>
+                            <li><a class="dropdown-item text-primary" href="#">Online Store</a></li>
+                            <li><a class="dropdown-item" href="#">eCommerce Templates</a></li>
+                            <li><a class="dropdown-item" href="#">Migrate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Sell
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sell on Wix</a></li>
+                            <li><a class="dropdown-item" href="#">Dropshipping Website</a></li>
+                            <li><a class="dropdown-item" href="#">Sell Custom Merch</a></li>
+                            <li><a class="dropdown-item" href="#">Sales Channels</a></li>
+                            <li><a class="dropdown-item" href="#">Sell Internationally</a></li>
+                            <li><a class="dropdown-item" href="#">Point of Sale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Manage
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Manage Your Store</a></li>
+                            <li><a class="dropdown-item" href="#">eCommerce Features</a></li>
+                            <li><a class="dropdown-item" href="#">eCommerce Hosting</a></li>
+                            <li><a class="dropdown-item" href="#">eCommerce Marketing</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Now, Pay Later</a></li>
+                            <li><a class="dropdown-item" href="#">Accept Payments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">
+                            Learn
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">eCommerce Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Learn eCommerce</a></li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            Pricing
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="btn btn-primary rounded-pill px-4">Create Your Store</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center mt-5 py-5">
+        <div class="container">
+            <h1 class="hero-title">Create an online store.<br>Kickstart your success.</h1>
+            <p class="fs-5 mb-5">Build an online store that fits your vision. Customize the design, access all-in-one
+                <br> eComm solutions and hit the web ready to do business.
+            </p>
+            <a href="#" class="btn btn-black">Create Your Store</a>
+            <p class="mt-3 text-muted">Start for free. No credit card required.</p>
+        </div>
+        <br>
+        <div class="container p-3 rounded-4" style="background-color: #166aea;">
+            <img src="img/studio-pack.png" alt="img" class="img-fluid">
+        </div>
+    </section>
+
+    <section class="text-center" style="background-color: #f4f4f4;">
+        <div class="container p-4">
+            <img src="img/rating.png" alt="img" class="img-fluid">
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <!-- Heading & description -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-start">
+                    <h2 class="display-5">Built-in features for every stage of your business</h2>
+                </div>
+                <div class="col-lg-4 text-start">
+                    <p class="text-muted mt-3">
+                        Wix’s online store builder offers everything you need right out of the box. Design, sell,
+                        manage, grow—the solutions are ready, just plug in and launch.
+                    </p>
+                    <a href="#" class="btn btn-dark btn-lg rounded-pill mt-2">Create Your Store</a>
+                </div>
+            </div>
+
+            <!-- 3 Columns Feature Cards -->
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="border border-dark pointer-event rounded-4 h-100 p-4 text-start">
+                        <h4>Rapid store creation,<br>best-in-class design</h4>
+                        <p class="text-muted mt-5">Turn your business into a standout brand. Choose a template or use AI
+                            to create a personalized site in minutes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="border border-dark pointer-event rounded-4 h-100 p-4 text-start">
+                        <h4>A full eComm suite at<br>your fingertips</h4>
+                        <p class="text-muted mt-5">Access tools that support all of your eComm needs, from marketing to
+                            multichannel sales to managing your business.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="border border-dark pointer-event rounded-4 h-100 p-4 text-start">
+                        <h4>Run your online business<br>from any device</h4>
+                        <p class="text-muted mt-5">Oversee every aspect of your business, whether you’re on the computer
+                            or on the go with the Wix mobile app.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid py-5">
+            <div c>
+                <div class="row align-items-center">
+                    <!-- Left Side -->
+                    <div class="col-lg-6 mb-4 mb-lg-0 p-5" style="background-color: #d7e9d5;">
+                        <h1 class="mb-4">How to create an<br>online store</h1>
+                        <div class="border rounded shadow-sm overflow-hidden">
+                            <img src="img/terra.png" alt="Website Preview" class="img-fluid w-100">
+                        </div>
+                        <div class="d-flex flex-wrap mt-4">
+                            <a href="#" class="btn rounded-4 btn-dark me-3 mb-2">Create a Store</a>
+                            <a href="#" class="text-decoration-underline d-flex align-items-center mb-2">Learn how to
+                                start an online store <span class="ms-1">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="col-lg-6 p-5">
+                        <ol class="list-group list-group-numbered p-5">
+                            <h5 class="mb-4">Create your eCommerce store with these 5 steps:</h5>
+                            <li class="list-group-item border-0 ps-0">
+                                <strong>Design and customize your site</strong><br>
+                                Use professional templates, AI and more to give your site its own personality.
+                            </li>
+                            <li class="list-group-item border-0 ps-0">
+                                <strong>Add your products</strong><br>
+                                Easily create a rich product catalog. Add products in bulk and generate product
+                                descriptions with AI.
+                            </li>
+                            <li class="list-group-item border-0 ps-0">
+                                <strong>Configure payment and shipping options</strong><br>
+                                Get paid securely and fulfill orders easily with your choice of payment gateways and
+                                shipping options.
+                            </li>
+                            <li class="list-group-item border-0 ps-0">
+                                <strong>Connect to a domain and publish your store</strong><br>
+                                Go live and reach maximum visibility with a <a href="#">custom domain name</a>.
+                            </li>
+                            <li class="list-group-item border-0 ps-0">
+                                <strong>Promote your business</strong><br>
+                                Drive traffic to your store with built-in SEO and marketing tools.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="      background-color: #1a2535;
+      color: white;">
+        <div class="container mt-5">
+            <!-- Header Section -->
+            <div class="row header-section border-bottom mb-5">
+                <div class="col-md-6">
+                    <h1 class="main-title">Online store templates<br>designed to convert</h1>
+                </div>
+                <div class="col-md-6">
+                    <p class="description-text">
+                        Build your store with a template designed for selling. Choose from
+                        a large selection of <a href="#" class="link-text">free online store templates</a>, made with
+                        built-in
+                        business features to drive sales.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="category-tabs mb-4">
+                <a href="#" class="category-tab active">Fashion</a>
+                <a href="#" class="category-tab">Electronics</a>
+                <a href="#" class="category-tab">Home & Decor</a>
+                <a href="#" class="category-tab">Beauty & Wellness</a>
+                <a href="#" class="category-tab">Other</a>
+            </div>
+
+            <!-- Template Gallery - Horizontal Scrollable -->
+            <div class="template-scroll-container">
+                <!-- Template 1 -->
+                <div class="template-scroll-item">
+                    <img src="img/img-store-1.png" alt="JUD Fashion Template" class="img-fluid h-100 w-100">
+
+                </div>
+
+                <!-- Template 2 -->
+                <div class="template-scroll-item" style="width: 700px;">
+                    <img src="img/img-store-2.png" alt="JUD Fashion Template" class="img-fluid h-100 w-100">
+
+                </div>
+
+                <!-- Template 3 -->
+                <div class="template-scroll-item" style="width: 250px; height: 250px">
+                    <img src="img/img-store-3.png" alt="JUD Fashion Template" class="img-fluid h-100 w-100">
+
+                </div>
+
+
+            </div>
+
+            <!-- Explore Link -->
+            <a href="#" class="explore-link">
+                Explore All Fashion
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <h1 class="fw-bold">An online store builder<br>made for business</h1>
+                <div class="mt-4">
+                    <p class="fw-semibold mb-1">Choose a template or use the power of AI</p>
+                    <p class="text-muted">
+                        Jumpstart your business with a template designed for your industry, or
+                        <a href="#" class="text-decoration-underline">generate a professional website with AI</a> in
+                        minutes.
+                    </p>
+                    <hr>
+                    <p class="fw-semibold">Drag and drop editor</p>
+                    <hr>
+                    <p class="fw-semibold">Top-to-bottom customization</p>
+                    <hr>
+                    <p class="fw-semibold">AI tools and automations</p>
+                </div>
+                <a href="#" class="btn btn-dark rounded-pill px-4 py-2 mt-3">Build Your Store</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="rounded-4 p-2" style="background-color: #b8c6dc;">
+                    <img src="https://static.wixstatic.com/media/a261d7_73eb643cbc4a41bf97ea7e94c4abe278f000.jpg/v1/fill/w_544,h_341,al_c,q_80,usm_0.33_1.00_0.00,enc_avif,quality_auto/a261d7_73eb643cbc4a41bf97ea7e94c4abe278f000.jpg"
+                        class="img-fluid rounded-3" alt="AI Store Builder">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5">
+        <div class="container text-center p-5" style="background-color: #f9a857; border-radius: 2rem;">
+            <h2 class="fw-semibold mb-4">Make your store official with<br>your own domain name</h2>
+            <div class="d-flex justify-content-center align-items-center mb-3 flex-wrap">
+                <div class="input-group rounded-pill overflow-hidden" style="max-width: 700px;">
+                    <input type="text" class="form-control border-0 px-4 py-3" placeholder="e.g. haileyfashion">
+                    <button class="btn btn-dark rounded-5 px-4" type="button">Search →</button>
+                </div>
+            </div>
+            <p class="text-muted">Enjoy a free one-year domain voucher with your Premium plan.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div c>
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 p-5">
+                        <h1 class="display-5 fw-bold">Sell everything, from physical to digital products</h1>
+                        <p class="mt-3">Discover unlimited ways to expand your product offering. Your online store can
+                            handle up to 50,000 items, giving you the freedom to constantly grow your catalog and offer
+                            new products.</p>
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-3"><strong>&rarr; Dropshipping</strong><br><a href="#">dropshipping
+                                    website</a> with third-party suppliers handling shipping and inventory.</li>
+                            <li class="mb-3"><strong>&rarr; Print on demand</strong><br><a href="#">Sell custom
+                                    merch</a> shipped directly from suppliers with your own designs.</li>
+                            <li class="mb-3"><strong>&rarr; Digital products</strong><br><a href="#">Digital
+                                    products</a> like music and online courses to expand your hands-free inventory.</li>
+                            <li class="mb-3"><strong>&rarr; Subscriptions</strong><br><a href="#">Offering
+                                    subscriptions</a> and gift boxes to generate recurring revenue.</li>
+                        </ul>
+                        <a href="#" class="btn btn-dark rounded-5 btn-lg mt-3">Start Selling</a>
+                    </div>
+                    <div class="col-lg-6 mb-lg-0 p-5" style="background-color: #d7e9d5;">
+                        <div class="border rounded  overflow-hidden py-5">
+                            <img src="img/inventory-1.png" alt="Website Preview" class="img-fluid w-100">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div>
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 p-5">
+                        <h1 class="display-6 fw-bold">Manage your store’s logistics with built-in tools</h1>
+                        <p class="mt-3">Take full control over business logistics from the convenience of your
+                            dashboard. Simplify shipping and store management with native tools.</p>
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-3"><strong>&rarr; Inventory management</strong><br>Sync inventory across all
+                                <a href="#">sales channels</a> with an optimized stocking system.
+                            </li>
+                            <li class="mb-3"><strong>&rarr; Native shipping integrations</strong><br>Print shipping
+                                labels, track with one-click, and access discounts.</li>
+                            <li class="mb-3"><strong>&rarr; Bulk shipping labels</strong><br>Speed up order fulfillment
+                                and enhance shopping experience.</li>
+                            <li class="mb-3"><strong>&rarr; Cross-border shipping</strong><br>Display live shipping
+                                rates for international buyers.</li>
+                        </ul>
+                        <a href="#" class="btn btn-dark rounded-5 btn-lg mt-3">Build Your Store</a>
+                    </div>
+                    <div class="col-lg-6 mb-lg-0 p-5" style="background-color: #d7e9d5;">
+                        <div class="border rounded overflow-hidden py-5">
+                            <img src="img/inventory-2.png" alt="Website Preview" class="img-fluid w-100">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-white" style="background-color: #1e2c3e;">
+        <div class="container-fluid p-5">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-5 ">Get inspired by these<br>standout online stores made<br>with Wix</h1>
+                </div>
+                <div class="col-md-4 text-md-end mt-4 mt-md-0">
+                    <p class="mb-2">See how sellers from around the world<br>have found success.</p>
+                    <a href="#" class="text-white text-decoration-underline fw-semibold">Explore Now <span
+                            class="ms-1">→</span></a>
+                </div>
+            </div>
+        </div>
+        <img src="img/inspired-1.png" alt="img" class="overflow-hidden img-fluid">
+        <img src="img/inspired-2.png" alt="img" class="overflow-hidden img-fluid mb-5">
+    </section>
+
+    <section>
+        <div class="container p-5 mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="display-5">Powerful SEO tools to enhance your visibility</h2>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3">
+                            <strong>&rarr; Chart a path to higher search engine rankings</strong><br>
+                            <small>Create SEO tags or generate them with AI to help shoppers find you.</small>
+                        </li>
+                        <li class="mb-3">
+                            <strong>&rarr; Save time with multiple-page optimization</strong><br>
+                            <small>Apply your own SEO settings across multiple pages and control URL slugs and meta tags
+                                from one place.</small>
+                        </li>
+                        <li class="mb-3">
+                            <strong>&rarr; Use data to improve traffic</strong><br>
+                            <small>Access key reports and analytics straight from your dashboard.</small>
+                        </li>
+                        <li class="mb-3">
+                            <strong>&rarr; Connect to Google Search Console</strong><br>
+                            <small>Streamline site indexing and address SEO issues with <a href="#">built-in
+                                    integrations</a>.</small>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-dark rounded-5 mt-3">Get Started</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://static.wixstatic.com/media/a261d7_f3922c9285e64283b02ab61125dda8d6~mv2.jpg/v1/fill/w_848,h_588,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%201000007383.jpg"
+                        alt="SEO Example" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center">
+                    <img src="https://static.wixstatic.com/media/a261d7_63b77ad15623485cbe11ed9641909dfe~mv2.jpg/v1/fill/w_848,h_638,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%201000007383%20(1).jpg"
+                        alt="Marketing Tools" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="display-6">Get exposure with built-in marketing tools</h2>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3">
+                            <strong>&rarr; CRM</strong><br>
+                            <small>Send targeted campaigns and develop ongoing communication with contacts and
+                                leads.</small>
+                        </li>
+                        <li class="mb-3">
+                            <strong>&rarr; Email marketing</strong><br>
+                            <small>Reach them in their inbox. Launch customized campaigns to keep your business top of
+                                mind.</small>
+                        </li>
+                        <li class="mb-3">
+                            <strong>&rarr; Paid ads</strong><br>
+                            <small>Post ads on Facebook, Google and Instagram and reach millions of potential
+                                customers—all from your dashboard.</small>
+                        </li>
+                        <li class="mb-3">
+                            <strong>&rarr; Coupons and Loyalty</strong><br>
+                            <small>Increase revenue with coupons, discounts and the native <a href="#">Loyalty
+                                    Program</a>.</small>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-dark rounded-5 mt-3">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="row mb-4">
+                <div class="col-md-6 px-5">
+                    <h2 class="display-6">Infrastructure built for optimal store growth</h2>
+                </div>
+                <div class="col-md-6 px-5 text-start">
+                    <p>Build on a solid infrastructure and scale your business along with your growth. Get free secure
+                        <a href="#">eCommerce web hosting</a>.
+                    </p>
+                    <a href="#" class="btn btn-dark rounded-5">Get Started</a>
+                </div>
+            </div>
+            <div class="row text-start p-5">
+                <div class="col-md-3">
+                    <h5 class="mb-4">Security</h5>
+                    <p>Process every transaction with confidence. Real-time detection, 24/7/365 threat protection, PCI
+                        DSS Level 1 compliance.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">Reliability</h5>
+                    <p>Operate on an unshakeable platform designed to support and promote growth.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">Performance</h5>
+                    <p>Lag-free, high-speed site with support for high-volume traffic and transactions.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">Hosting</h5>
+                    <p>Multi-cloud hosting with global coverage. Always on and ready to scale with your store.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="https://static.wixstatic.com/media/a261d7_621f025fc6bc47a28452e1821ac34806~mv2.jpg/v1/fill/w_1717,h_648,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Frame%201000007306.jpg"
+                    alt="img" class="img-fluid rounded-5">
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #166aea;">
+        <div class="heading-container">
+            <h1 class="display-4 fw-bold mb-4">Choose the plan that's right for you</h1>
+            <p class="fs-5">Start for free and get a domain and hosting for your new online store. Join one of our
+                business plans to accept payments and start selling your products.</p>
+        </div>
+
+        <div class="plan-container">
+            <div class="row g-4">
+                <!-- Business Elite Plan -->
+                <div class="col-md-4">
+                    <div class="plan-card h-100">
+                        <div class="plan-content">
+                            <h2 class="plan-title text-dark mb-5">Business Elite</h2>
+
+                            <div class="plan-feature">
+                                <div>
+                                    <span class="highlight">Unlimited</span>
+                                    storage
+                                </div>
+
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">Free</span>
+                                <span>domain for 1 year</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Accept payments</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">50,000</span>
+                                <span>products</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">50,000</span>
+                                <span>dropshipping products*</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">Advanced</span>
+                                <span>marketing suite</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">Advanced</span>
+                                <span>site analytics</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Customized reports</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Abandoned cart recovery</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <div>
+                                    <span class="highlight">Unlimited</span>
+                                    back-in-stock notifications
+                                </div>
+
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Sell on marketplaces</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Sell on social channels</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">500 automatic</span>
+                                <span>tax transactions**</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Primary currency + 10 additional currencies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Plan (Recommended) -->
+                <div class="col-md-4">
+                    <div class="plan-card h-100">
+                        <div class="w-100 fw-bold text-center rounded-2 p-2" style="background-color: #f9a857;">
+                            RECOMMENDED</div>
+                        <div class="plan-content">
+                            <h2 class="plan-title text-dark mb-5">Business</h2>
+
+                            <div class="plan-feature">
+                                <span class="highlight">100 GB</span>
+                                <span>storage space</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">Free</span>
+                                <span>domain for 1 year</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Accept payments</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">50,000</span>
+                                <span>products</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">250</span>
+                                <span>dropshipping products*</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">Standard</span>
+                                <span>marketing suite</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">Standard</span>
+                                <span>site analytics</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Abandoned cart recovery</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <div>
+                                    <span class="highlight">Unlimited</span>
+                                    back-in-stock notifications
+                                </div>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Sell on marketplaces</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Sell on social channels</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">100 automatic</span>
+                                <span>tax transactions**</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Primary currency + 5 additional currencies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Plan -->
+                <div class="col-md-4">
+                    <div class="plan-card h-100">
+                        <div class="plan-content">
+                            <h2 class="plan-title text-dark mb-5 ">Core</h2>
+
+                            <div class="plan-feature">
+                                <span class="highlight">50GB</span>
+                                <span>storage space</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">Free</span>
+                                <span>domain for 1 year</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Accept payments</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">50,000</span>
+                                <span>products</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">25</span>
+                                <span>dropshipping products*</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">Basic</span>
+                                <span>marketing suite</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">Basic</span>
+                                <span>site analytics</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Abandoned cart recovery</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span class="highlight">10</span>
+                                <span>back-in-stock notifications</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Sell on marketplaces</span>
+                            </div>
+
+                            <div class="plan-feature">
+                                <span>Sell on social channels</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="btn btn-light text-primary rounded-5 my-3">Compare Plans</a>
+                    <p class="text-light">
+                        * Integrated by Modalyst ** Per month
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5">
+        <div class="container text-center">
+            <!-- Heading & description -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-start">
+                    <h2 class="display-5">Expert advice to put you ahead</h2>
+                </div>
+                <div class="col-lg-4 text-start">
+                    <p class="text-muted mt-3">
+                        Get advice from industry experts and thought leaders. Check out our blog for the latest
+                        eCommerce trends, selling and marketing tips and in-depth tutorials from Wix Learn.
+                    </p>
+                    <a href="#" class=" mt-2">Discover more on the Wix Blog <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- 3 Columns Feature Cards -->
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="h-100 p-4 text-start">
+                        <img src="img/example-1.png" alt="img" class="img-fluid rounded-4">
+                        <h4 class="mt-3">
+                            33 examples of the best eCommerce website designs
+                        </h4>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="h-100 p-4 text-start">
+                        <img src="img/example-2.png" alt="img" class="img-fluid rounded-4">
+                        <h4 class="mt-3">8 proven ways to drive traffic to your online store
+                        </h4>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="h-100 p-4 text-start">
+                        <img src="img/example-3.png" alt="img" class="img-fluid rounded-4">
+                        <h4 class="mt-3">19 profitable eCommerce business ideas
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container  p-5">
+            <h2 class="mb-5 ">Wherever you are, we’re here for you -<br> customer support 24/7</h2>
+            <div class="row g-4">
+                <button class="btn col-md-12">
+                    <div
+                        class="border border-dark btn-solution  rounded-4 p-5 d-flex justify-content-between align-items-center flex-wrap">
+                        <h4 class="">Find quick solutions</h4>
+                        <div class="mb-2 mb-md-0 text-start" style="width: 300px;">
+                            <p class="text-muted m-0">Get answers from tutorials and articles in the Wix Help Center.
+                            </p><br>
+                            <a href="#" class="text-decoration-underline fw-semibold">Go to Help Center</a>
+                        </div>
+                        <div><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </button>
+                <button class="btn col-md-12">
+                    <div
+                        class="border border-dark btn-solution  rounded-4 p-5 d-flex justify-content-between align-items-center flex-wrap">
+                        <h4 class="">Contact us</h4>
+                        <div class="mb-2 mb-md-0 text-start" style="width: 300px;">
+                            <p class="text-muted m-0">Get round-the-clock dedicated support by chat or schedule a call
+                                with Customer Care.</p><br>
+                            <a href="#" class="text-decoration-underline fw-semibold">Login & Chat With Us</a>
+                        </div>
+                        <div><i class="fas fa-arrow-right"></i></div>
+
+                    </div>
+                </button>
+                <button class="btn col-md-12">
+                    <div
+                        class="border border-dark btn-solution  rounded-4 p-5 d-flex justify-content-between align-items-center flex-wrap">
+                        <h4 class="">Hire a pro</h4>
+                        <div class="mb-2 mb-md-0 text-start" style="width: 300px;">
+                            <p class="text-muted m-0">Get a pro to do it for you-from site creation to eCommerce growth.
+                            </p><br>
+                            <a href="#" class="text-decoration-underline fw-semibold">Browse All Services</a>
+                        </div>
+                        <div><i class="fas fa-arrow-right"></i></div>
+
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5">
+        <h1>
+Online store builder FAQ</h1>
+        <!-- FAQ Item 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What is an online store?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What is an online store builder?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingTwo">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can I build an online store for free?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingThree">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    How long does it take to set up an online store?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingFour">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    What is the best online store builder?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingFive">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Why should I choose Wix for selling online?
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingSix">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    How do I make a good online store?
+                </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingSeven">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 8 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    How do I utilize AI to build a great retail website?
+                </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingEight">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 9 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    How do I start an online shop without inventory?
+                </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingNine">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 10 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    Will mobile shoppers be able to make purchases in my store?
+                </button>
+            </h2>
+            <div id="collapseTen" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingTen">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 11 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEleven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    What products should I sell online?
+                </button>
+            </h2>
+            <div id="collapseEleven" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingEleven">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 12 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwelve">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                    How do I better convert online shoppers?
+                </button>
+            </h2>
+            <div id="collapseTwelve" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingTwelve">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 13 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThirteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                    What is the cost of building an online store?
+                </button>
+            </h2>
+            <div id="collapseThirteen" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingThirteen">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 14 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFourteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                    How do I drive high-quality traffic to my online shop?
+                </button>
+            </h2>
+            <div id="collapseFourteen" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingFourteen">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="p-5" style="background-color: #faa85e">
+        <div class="text-center p-5">
+            <h1 style="color: black; font-size: 3rem">Make your online store a success.</h1>
+            <br>
+            <a href="#" class="btn start-btn" style="background-color: black; color:white">Create Your Store <i
+                    class="fas fa-arrow-right ms-1"></i></a>
+
+        </div>
+    </section>
+
+    <div class="footer-container">
+        <div class="row">
+            <!-- Product Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Product</h5>
+                <ul>
+                    <li><a href="#">Website Templates</a></li>
+                    <li><a href="#">Website Builder</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Wix Features</a></li>
+                    <li><a href="#">App Market</a></li>
+                    <li><a href="#">Web Hosting</a></li>
+                    <li><a href="#">Domain Names</a></li>
+                    <li><a href="#">Website Accessibility</a></li>
+                    <li><a href="#">Mobile App Builder</a></li>
+                </ul>
+            </div>
+
+            <!-- Solutions Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Solutions</h5>
+                <ul>
+                    <li><a href="online-store.html">Online Store</a></li>
+                    <li><a href="online-booking.html">Online Booking</a></li>
+                    <li><a href="restaurant.html">Restaurant Website</a></li>
+                    <li><a href="blog.html">Blog Website</a></li>
+                    <li><a href="portfolio.html">Portfolio Website</a></li>
+                    <li><a href="ecommerce.html">eCommerce Website</a></li>
+                    <li><a href="#">Wix Studio</a></li>
+                    <li><a href="#">Enterprise Solutions</a></li>
+                    <li><a href="#">Student Website</a></li>
+                    <li><a href="#">Professional Tools</a></li>
+                    <li><a href="#">Logo Maker</a></li>
+                </ul>
+            </div>
+
+            <!-- Learn Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="#">Wix Blog</a></li>
+                    <li><a href="#">Privacy and Security Hub</a></li>
+                    <li><a href="#">SEO Learning Hub</a></li>
+                    <li><a href="#">Wix Encyclopedia</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Hire a Professional</a></li>
+                    <li><a href="#">Report Abuse</a></li>
+                    <li><a href="#">System Status</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">Press & Media</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Wix Capital</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                    <li><a href="#">Patent Notice</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- About Column -->
+            <div class="col-md-2">
+                <a class="navbar-brand" href="#">
+                    <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                        <g fill="#000" clip-path="url(#Logo_svg__a)">
+                            <path
+                                d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <p class="footer-description mt-4">
+                    The Wix website builder offers a complete solution from enterprise-grade infrastructure and business
+                    features to advanced SEO and marketing tools–enabling anyone to create and grow online.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom row">
+            <div class="col-md-6">
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end d-flex justify-content-md-end align-items-center">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <!-- Copyright -->
+                <div class="copyright ms-4">
+                    © 2006-2025 Wix.com, Inc
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>

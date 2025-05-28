@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder - Create a Free Website In Minutes | Wix.com</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                    <g fill="#000" clip-path="url(#Logo_svg__a)">
+                        <path
+                            d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Product dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button">
+                            Product
+                        </a>
+                        <div class="mega-dropdown dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="row"> <!-- Baris utama untuk Creation dan Business -->
+                                            <!-- Kolom Creation -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">CREATION</div>
+                                                <div class="menu-item">
+                                                    <h4>Website design</h4>
+                                                    <p>Create your site with intuitive design features.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Website templates</h4>
+                                                    <p>Choose from 900+ website templates.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>AI website builder</h4>
+                                                    <p>Create your site in no time with AI.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom Business -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">BUSINESS</div>
+                                                <div class="menu-item">
+                                                    <h4>eCommerce</h4>
+                                                    <p>Run & grow your eCommerce website.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Scheduling</h4>
+                                                    <p>Manage appointments, staff & clients.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Restaurant</h4>
+                                                    <p>Manage your menus, orders, and reservations.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom tambahan (Blog dll) -->
+                                            <div class="col-4">
+                                                <div class="menu-item">
+                                                    <h4>Blog</h4>
+                                                    <p>Share ideas & grow your traffic.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Portfolio</h4>
+                                                    <p>Showcase your work with an online portfolio.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 sidebar">
+                                        <div class="dropdown-header">ESSENTIALS</div>
+                                        <div class="menu-item">
+                                            <h4>Domain names</h4>
+                                            <p>Buy & register a domain for your website.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Web hosting</h4>
+                                            <p>Get secure & reliable website hosting.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Website security</h4>
+                                            <p>Get enterprise-grade security for your site.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Solutions dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button">
+                            Solutions
+                        </a>
+                    </li>
+
+                    <!-- Resources dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button">
+                            Resources
+                        </a>
+                    </li>
+
+                    <!-- Pricing -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                </ul>
+
+                <!-- Right side of navbar -->
+                <div class="d-flex align-items-center">
+                    <!-- Wixel -->
+                    <a class="nav-link me-3" href="#">Wixel</a>
+
+                    <!-- Wix Studio -->
+                    <a class="nav-link me-3" href="#">Wix Studio</a>
+
+                    <!-- Enterprise -->
+                    <a class="nav-link me-3" href="#">Enterprise</a>
+
+                    <!-- Globe icon -->
+                    <a class="nav-link me-3" href="#"><i class="fas fa-globe"></i></a>
+
+                    <!-- Log In -->
+                    <a class="nav-link me-3" href="login.html">Log In</a>
+
+                    <!-- Get Started button -->
+                    <button class="btn btn-get-started">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Color palette dots -->
+        <div class="color-palette">
+            <div class="color-dot color-dot-orange"></div>
+            <div class="color-dot color-dot-blue"></div>
+            <div class="color-dot color-dot-purple"></div>
+            <div class="color-dot color-dot-green"></div>
+        </div>
+
+        <!-- Product card - lamp -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://static.wixstatic.com/media/0784b1_c9d4a03862dc4ef3aaed7271fef75139~mv2.jpg/v1/fill/w_453,h_475,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/image%2011802.jpg"
+                    alt="Modern lamp">
+            </div>
+            <div class="product-info">
+                <p class="product-name">Nordlar Lamp $84.00</p>
+            </div>
+        </div>
+
+        <!-- ERUN Logo element -->
+        <div class="logo-element">
+            <img src="https://static.wixstatic.com/media/7e521c_5626071036c04a86a0de0b04668f338f~mv2.png/v1/fill/w_301,h_142,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Frame%201000007785%20(1).png"
+                alt="img">
+        </div>
+
+        <!-- AI image editor button -->
+        <div class="image-editor">
+            <div class="editor-icon">
+                <i class="fas fa-magic"></i>
+            </div>
+            <span>AI image editor</span>
+        </div>
+
+        <!-- Image frame with pasta/food -->
+        <div class="image-frame">
+            <img src="https://static.wixstatic.com/media/0784b1_314527ca562b48869e0ab8525f78d008~mv2.png/v1/fill/w_165,h_143,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202024-07-24%20at%2014_48_12%201.png"
+                alt="Food items">
+        </div>
+
+        <!-- Person card with edit button -->
+        <div class="person-card">
+            <img src="https://static.wixstatic.com/media/0784b1_e9244ffc3b0c45d6adb3a9ca34708f9b~mv2.jpg/v1/fill/w_453,h_475,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/image%2011803.jpg"
+                alt="Person with blue sweater">
+            <div class="edit-btn">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+        </div>
+
+        <!-- Main hero content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Create a website<br>without limits</h1>
+            <p class="hero-subtitle">Bring your vision to life with the website builder that <br> gives you the tools
+                you need to succeed.</p>
+            <div class="d-sm-block d-lg-none">
+                <input type="text" id="email" placeholder="Enter your email address" class="p-2"
+                    style="border-radius: 30px;" autocomplete="off"><br><br>
+            </div>
+            <button class="btn hero-btn">Get Started</button>
+            <p class="hero-disclaimer">Start for free. No credit card required.</p>
+        </div>
+
+    </section>
+    <section style="background-color: #d9e7f8;" class="p-5">
+        <div class="container img-lg" style="background-color: #c2c4fe; max-width:1000px; border-radius:20px">
+            <img src="img/img-hero.png" alt="img" class="img-fluid">
+        </div>
+        <div class="container img-sm">
+            <img src="img/img-sm.png" alt="img" class="img-fluid">
+        </div>
+    </section>
+    
+    <div class="container mt-5 p-5">
+        <h1>Website builder FAQ</h1>
+
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Is it easy to build a website?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                        Yes. Wix offers a few different ways to create your own free website, so you can
+                        choose the creation process that works best for you. Pick from 900+ designer-
+                        made templates, or use our <a href="#">AI website builder</a> to create a business-ready site in
+                        no time using a conversational interface. You can also start from scratch using
+                        Wix's <a href="#">drag and drop website builder</a>. Whichever way you choose, you can always
+                        continue customizing in the Editor for total <a href="#">website design</a> freedom.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I create a website?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                        Here’s how to create your own website in 6 steps:
+                        <ol>
+                            <li>Plan your website. First, think about the type of site you’re creating and your target
+                                audience. With that in mind, you can start mapping out the pages you want to incorporate
+                                like the “About” and “Contact” pages, perhaps a blog or a photo gallery, and a page for
+                                products or services.</li>
+                            <li>Build with AI or choose a template. Chat with our AI website builder about your business
+                                and preferences to instantly get a fully functional and customizable website built for
+                                you. You can also start by choosing from a variety of templates, all professionally
+                                designed with the best site practices in mind.</li>
+                            <li>Customize your website. Whether you start with AI or a template, you can use our
+                                intuitive drag and drop editor to customize your site to match your brand. Your site
+                                will also be optimized for mobile, but in the editor you have the option to make changes
+                                and customize your site’s mobile view.</li>
+                            <li>Get a domain name. When trying to come up with the perfect domain name, you can use Wix
+                                to search and register available names, or connect an existing one to your new site.
+                            </li>
+                            <li>Optimize for search engines. Use a suite of advanced SEO tools to help you optimize your
+                                site and increase organic traffic.</li>
+                            <li>Publish and promote your website. Once you’re happy with your site, you’re ready to hit
+                                ‘publish’ and start gaining traffic. Now’s the time to promote your site with built-in
+                                marketing tools and streamline your customer management processes with a smart CRM
+                                system.</li>
+                        </ol>
+                        By following these steps, you'll be able to build a powerful online presence that drives
+                        business growth.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How do I choose the best website builder?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                        The best website builder is one that will support your specific needs and business goals. As you
+                        research which builder is right for you, here are some important factors to consider:
+                        <ul>
+                            <li><strong>Ease of use:</strong> Look for a website maker with an intuitive interface.
+                                Using a drag and drop editor that includes AI tools can simplify the web design process
+                                and make it more efficient.</li>
+                            <li><strong>Website templates:</strong> Look for a platform that offers a large selection of
+                                customizable templates tailored to a variety of industries and business types.</li>
+                            <li><strong>Business solutions:</strong> Some website builders include built-in solutions to
+                                help you manage and grow your business seamlessly like eCommerce, scheduling, marketing
+                                tools and more.</li>
+                            <li><strong>Security:</strong> It’s important that the website builder you choose offers
+                                reliable web hosting with data encryption to protect your and your users’ data.</li>
+                            <li><strong>Customer support:</strong> Reliable support is crucial. Check what support
+                                options your website builder provides, and make sure you’ll be able to get the help you
+                                need 24/7.</li>
+                        </ul>
+                        Wix fulfills all these requirements, giving you the tools you need to create a website and
+                        confidently run and grow your business all in one place.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What types of websites can you build on Wix?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingFour">
+                    <div class="accordion-body">
+                        With our free website builder, you can create any kind of website you want, including:
+                        <ul>
+                            <li><strong>Business sites</strong> - No matter what your industry, build and grow your
+                                professional presence online.</li>
+                            <li><strong>Online stores</strong> - Sell products, offer subscriptions and create marketing
+                                campaigns with an all-in-one eComm solution.</li>
+                            <li><strong>Blogs</strong> - Let the world know what’s on your mind with an easy-to-manage
+                                blog.</li>
+                            <li><strong>Portfolios</strong> - Showcase your work with beautiful visuals and custom
+                                layouts.</li>
+                            <li><strong>Restaurants</strong> - Take reservations, display your menu and run your whole
+                                ordering system from a single place.</li>
+                            <li><strong>Enterprise corporations</strong> - Get started with multi-site management,
+                                super-efficient site creation and everything else a big business needs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How long does it take to build a website?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingFive">
+                    <div class="accordion-body">
+                        The amount of time it takes to build a website is now quicker than ever thanks to technological
+                        advancements in the field. In fact, you can build a functional and professional looking website
+                        in a matter of hours on a platform like Wix. To make the process even faster, you can chat with
+                        Wix’s AI website creator about the kind of site you want and you’ll have a draft of your website
+                        ready in minutes. Then you can customize it to make it your own with the drag and drop editor.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        How much does it cost to build a website?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingSix">
+                    <div class="accordion-body">
+                        The cost of building a website varies depending on the features you need and whether you opt to
+                        build it yourself with a website builder or pay a developer to build it for you. On a website
+                        builder such as Wix, you can build as many websites as you want for free, however, you’ll have
+                        to upgrade to a <a href="#">Premium plan</a> to connect a custom domain and get advanced
+                        business features. The cost of creating a website may be significantly higher if you don’t opt
+                        for an all-inclusive platform like Wix.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Can I create a website without knowing how to code?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingSeven">
+                    <div class="accordion-body">
+                        Absolutely. Wix is an intuitive HTML website builder that makes it possible to create a
+                        high-quality website without knowing how to code. In the Wix Editor, you can drag and drop any
+                        feature you want and customize it to match the look and feel of your site. Of course, you have
+                        the option to add advanced functionality with code as well.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Should I use a website builder or hire a developer?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingEight">
+                    <div class="accordion-body">
+                        Wix’s no-code website builder is intuitive to use and will cost you significantly less than
+                        hiring a developer. However, if you are looking for expert help, you can hire a freelance web
+                        developer through the <a href="#">Wix Marketplace</a> at a cost that suits your budget.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Does my free website come with hosting?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingNine">
+                    <div class="accordion-body">
+                        When you create a website with Wix, you not only get reliable, scalable multi-cloud web hosting
+                        that ensures 99.98% uptime, but also automatic disaster recovery and worldwide CDN coverage.
+                        Your site also comes with 2 layers of DDoS protection against potential vulnerabilities. Plus,
+                        with 24/7 security monitoring and HTTPS and SSL protection, your website is always safe and
+                        secure—giving you peace of mind.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 10 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        How can I connect a domain to my website?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingTen">
+                    <div class="accordion-body">
+                        When you create a free website with Wix, it comes with a Wixsite domain name built in (i.e.,
+                        mysite.wixsite.com). To instantly look more professional, boost your credibility and help
+                        visitors find you online, you can also get a new custom domain name, which comes free for a year
+                        with the initial purchase of an annual Premium plan. You can choose from a list of domain
+                        extensions, such as .com, .net, .org and many more to find the one that’s just right for your
+                        site. If you already own a domain name, you can always connect or transfer it to your Wix site.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 11 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        How can I optimize my site for SEO on Wix?
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingEleven">
+                    <div class="accordion-body">
+                        All Wix sites are designed with SEO best practices in mind and come with a suite of built-in SEO
+                        tools and guidance to give you everything you need to take on SEO confidently. Customize your
+                        SEO settings, use AI to generate meta tags and descriptions, get instant homepage indexing and
+                        more. In addition, your site comes with an SEO assistant that analyzes your pages and gives
+                        recommendations on ways to improve your search performance. You’ll also get key integrations
+                        like Google Search Console and Semrush, to help you compete in organic search.<br><br>
+                        Check out this <a href="#">Google case study</a> for more on Wix SEO.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 12 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        Can I use 3rd party apps with my website?
+                    </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingTwelve">
+                    <div class="accordion-body">
+                        Yes, there are hundreds of Wix-made and 3rd party integrations available through your dashboard
+                        and the <a href="#">Wix App Market</a>. These apps integrate seamlessly with your site and can
+                        help you with website creation, business management, marketing and so much more. Popular
+                        integrations include Google Analytics, Facebook Pixel and Zapier, just to name a few.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 13 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThirteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                        How can I design a logo for my website for free?
+                    </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingThirteen">
+                    <div class="accordion-body">
+                        You can design your own logo for free with the intuitive <a href="#">Wix Logo Maker</a>. If you
+                        need high-resolution files, you can purchase and download your logo from the logo maker at any
+                        time.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section style="background-color: #8fa3ff;" class="p-5">
+        <div class="container p-5 text-center justify-content-center flex-column">
+            <h1 class="mt-5" style="font-size: clamp(2rem, 5vw, 5rem); color:#101585">
+            Your vision. Your goals. Your website.
+            </h1>
+
+            <button class="btn hero-btn mb-5" style="background-color: #101585;">Get Started</button>
+
+        </div>
+    </section>
+
+     <div class="footer-container">
+        <div class="row">
+            <!-- Product Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Product</h5>
+                <ul>
+                    <li><a href="#">Website Templates</a></li>
+                    <li><a href="#">Website Builder</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Wix Features</a></li>
+                    <li><a href="#">App Market</a></li>
+                    <li><a href="#">Web Hosting</a></li>
+                    <li><a href="#">Domain Names</a></li>
+                    <li><a href="#">Website Accessibility</a></li>
+                    <li><a href="#">Mobile App Builder</a></li>
+                </ul>
+            </div>
+            
+            <!-- Solutions Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Solutions</h5>
+                <ul>
+                    <li><a href="online-store.html">Online Store</a></li>
+                    <li><a href="online-booking.html">Online Booking</a></li>
+                    <li><a href="restaurant.html">Restaurant Website</a></li>
+                    <li><a href="blog.html">Blog Website</a></li>
+                    <li><a href="portfolio.html">Portfolio Website</a></li>
+                    <li><a href="ecommerce.html">eCommerce Website</a></li>
+                    <li><a href="#">Wix Studio</a></li>
+                    <li><a href="#">Enterprise Solutions</a></li>
+                    <li><a href="#">Student Website</a></li>
+                    <li><a href="#">Professional Tools</a></li>
+                    <li><a href="#">Logo Maker</a></li>
+                </ul>
+            </div>
+            
+            <!-- Learn Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="#">Wix Blog</a></li>
+                    <li><a href="#">Privacy and Security Hub</a></li>
+                    <li><a href="#">SEO Learning Hub</a></li>
+                    <li><a href="#">Wix Encyclopedia</a></li>
+                </ul>
+            </div>
+            
+            <!-- Support Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Hire a Professional</a></li>
+                    <li><a href="#">Report Abuse</a></li>
+                    <li><a href="#">System Status</a></li>
+                </ul>
+            </div>
+            
+            <!-- Company Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">Press & Media</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Wix Capital</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                    <li><a href="#">Patent Notice</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            
+            <!-- About Column -->
+            <div class="col-md-2">
+                <a class="navbar-brand" href="#">
+                <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                    <g fill="#000" clip-path="url(#Logo_svg__a)">
+                        <path
+                            d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+                <p class="footer-description mt-4">
+                    The Wix website builder offers a complete solution from enterprise-grade infrastructure and business features to advanced SEO and marketing tools–enabling anyone to create and grow online.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom row">
+            <div class="col-md-6">
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end d-flex justify-content-md-end align-items-center">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <!-- Copyright -->
+                <div class="copyright ms-4">
+                    © 2006-2025 Wix.com, Inc
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>

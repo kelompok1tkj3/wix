@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder - Create a Free Website In Minutes | Wix.com</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                    <g fill="#000" clip-path="url(#Logo_svg__a)">
+                        <path
+                            d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Product dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button">
+                            Product
+                        </a>
+                        <div class="mega-dropdown dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="row"> <!-- Baris utama untuk Creation dan Business -->
+                                            <!-- Kolom Creation -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">CREATION</div>
+                                                <div class="menu-item">
+                                                    <h4>Website design</h4>
+                                                    <p>Create your site with intuitive design features.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Website templates</h4>
+                                                    <p>Choose from 900+ website templates.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>AI website builder</h4>
+                                                    <p>Create your site in no time with AI.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom Business -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">BUSINESS</div>
+                                                <div class="menu-item">
+                                                    <h4>eCommerce</h4>
+                                                    <p>Run & grow your eCommerce website.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Scheduling</h4>
+                                                    <p>Manage appointments, staff & clients.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Restaurant</h4>
+                                                    <p>Manage your menus, orders, and reservations.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom tambahan (Blog dll) -->
+                                            <div class="col-4">
+                                                <div class="menu-item">
+                                                    <h4>Blog</h4>
+                                                    <p>Share ideas & grow your traffic.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Portfolio</h4>
+                                                    <p>Showcase your work with an online portfolio.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 sidebar">
+                                        <div class="dropdown-header">ESSENTIALS</div>
+                                        <div class="menu-item">
+                                            <h4>Domain names</h4>
+                                            <p>Buy & register a domain for your website.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Web hosting</h4>
+                                            <p>Get secure & reliable website hosting.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Website security</h4>
+                                            <p>Get enterprise-grade security for your site.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Solutions dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button">
+                            Solutions
+                        </a>
+                    </li>
+
+                    <!-- Resources dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button">
+                            Resources
+                        </a>
+                    </li>
+
+                    <!-- Pricing -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                </ul>
+
+                <!-- Right side of navbar -->
+                <div class="d-flex align-items-center">
+                    <!-- Wixel -->
+                    <a class="nav-link me-3" href="#">Wixel</a>
+
+                    <!-- Wix Studio -->
+                    <a class="nav-link me-3" href="#">Wix Studio</a>
+
+                    <!-- Enterprise -->
+                    <a class="nav-link me-3" href="#">Enterprise</a>
+
+                    <!-- Globe icon -->
+                    <a class="nav-link me-3" href="#"><i class="fas fa-globe"></i></a>
+
+                    <!-- Log In -->
+                    <a class="nav-link me-3" href="login.html">Log In</a>
+
+                    <!-- Get Started button -->
+                    <button class="btn btn-get-started">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="p-5" style="background-color: #242f9b;">
+        <div class="container text-center text-light">
+            <h1 class="fw-bold">Create a blog worth sharing</h1>
+            <p>Grow your business and deliver the online experience your customers expect with this all-in-one business
+                solution.</p>
+            <a href="#" class="btn btn-light my-3 rounded-5">Start Blogging</a>
+            <p>Try it for free for an unlimited time and upgrade when you need.</p>
+        </div>
+        <div class="container">
+        </div>
+    </section>
+    <img src="https://static.wixstatic.com/media/0784b1_7c171ccfee9c478982bfa6208247a648~mv2.jpg/v1/fill/w_1897,h_764,al_t,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0784b1_7c171ccfee9c478982bfa6208247a648~mv2.jpg"
+        alt="#" class="img-fluid">
+
+    <section class="p-5">
+        <div class="container text-center">
+            <h1 class="fw-bold">Blog templates that set you up for success</h1><br>
+            <p>Choose from 900+ free customizable templates built with everything you need.</p><br>
+            <a href="#">
+                Explore Restaurant Website Templates <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="row m-5 g-5">
+
+                <div class="col-md-6">
+
+                    <img src="img/blog-1.png" alt="img" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+
+                    <img src="img/blog-2.png" alt="img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #aeceff">
+        <div class="container-fluid py-5">
+            <div class="row align-items-center">
+                <!-- Kiri (Teks) -->
+                <div class="col-lg-6 px-5">
+                    <h1 class="fw-bold mb-4">Build your blog your way</h1>
+
+                    <div class="mb-4">
+                        <h5 class="fw-semibold">Design a unique blog</h5>
+                        <p class="mb-4">Capture your brand’s personality with a complete suite of advanced design
+                            features in our blog maker.</p>
+                        <h5 class="fw-semibold">Establish your site’s domain name</h5>
+
+                        <p class="mb-4">Get a custom domain to build your credibility. For inspiration, check out the
+                            Blog Name Generator..</p>
+                        <h5 class="fw-semibold">Create with content in mind</h5>
+
+                        <p class="mb-4">Start publishing your unique content with a rich text editor and video and audio
+                            add-ons.
+
+                        </p>
+
+                    </div>
+
+                    <a href="#" class="rounded-5 btn btn-dark">Start Blogging</a>
+                </div>
+
+                <!-- Kanan (Gambar) -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="https://static.wixstatic.com/media/0784b1_429c8e137a144c678fbd1c970832288f~mv2.png/v1/fill/w_940,h_750,al_c,q_90,enc_avif,quality_auto/0784b1_429c8e137a144c678fbd1c970832288f~mv2.png    "
+                        alt="Mockup" class="img-fluid rounded" style="max-width: 90%;">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section style="background-color: #efefef">
+        <div class="container py-5">
+            <h1 class="fw-bold mb-5">The powerful infrastructure<br>behind your blog</h1>
+
+            <div class="row pt-5 text-start">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold border-top border-dark pt-4">Secure platform</h5>
+                    <p>Our world class experts and enterprise-grade security system work 24/7 so your audiences'
+                        information will always be kept safe and secure.</p>
+                </div>
+                <div class="col-md-4 mb-4 ps-4">
+                    <h5 class="fw-bold border-top border-dark pt-4">Reliable hosting</h5>
+                    <p>With <a href="#">free website hosting</a> on a worldwide CDN, your site is automatically backed
+                        up and will be able to handle any situation - from traffic spikes to outages - so you’ll always
+                        be up and running.</p>
+                </div>
+                <div class="col-md-4 mb-4 ps-4">
+                    <h5 class="fw-bold border-top border-dark pt-4">Faster loading</h5>
+                    <p>We have a performance-first culture, meaning our priority is providing the best user experience
+                        for you and your visitors, with faster loading sites that perform great on any device.</p>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a href="#" class="fw-bold text-decoration-underline">Start Blogging &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="container p-5">
+            <img src="https://static.wixstatic.com/media/0784b1_6e875de35784442e8cefe8a574bb28f7~mv2.jpg/v1/fill/w_1260,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cover%20%20Copy%2010.jpg"
+                alt="img" class="img-fluid my-5">
+            <h1 class="fw-bold mb-5">Drive traffic to your blog</h1>
+
+            <div class="row row-cols-1 row-cols-md-2 g-5 mb-4">
+                <div class="col">
+                    <h5 class="fw-bold">Grow your organic traffic</h5>
+                    <p>Get a full suite of <a href="#">advanced SEO tools</a> to increase traffic from search engines
+                        and grow your global audience.</p>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold">Reach the right people</h5>
+                    <p>Promote your blog posts on social media and translate your content into multiple languages to
+                        reach a wider audience.</p>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold">Engage your online community</h5>
+                    <p>Set up automatic emails, send newsletters and create social posts to share new content with your
+                        readers.</p>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold">Keep them coming back</h5>
+                    <p>Invite your followers to become members and start discussions to increase engagement with your
+                        blog.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="mt-4">
+                <a href="#" class="btn btn-dark rounded-pill px-4 py-2">Start Blogging</a>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="container p-5">
+            <img src="https://static.wixstatic.com/media/0784b1_c1a94aadce2641389f00605d7126f35d~mv2.jpg/v1/fill/w_1260,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard1.jpg"
+                alt="img" class="img-fluid my-5">
+            <h1 class="fw-bold mb-5">Monetize your blog</h1>
+
+            <div class="row row-cols-1 row-cols-md-2 g-5 mb-4">
+                <div class="col">
+                    <h5 class="fw-bold">Display ads</h5>
+                    <p>Use services like Google AdSense to show ads on your site and earn money with every click.</p>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold">Offer subscriptions</h5>
+                    <p>Give visitors access to exclusive content with paid subscriptions that automatically renew.</p>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold">Sell online</h5>
+                    <p>Add a store to your site and sell branded merchandise with our complete eCommerce platform.</p>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold">Offer courses and events</h5>
+                    <p>Offer webinars, pre-recorded online courses, and in-person meetups for your audience.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="mt-4">
+                <a href="#" class="btn btn-dark rounded-pill px-4 py-2">Start Blogging</a>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #fa8971">
+        <div class="container-fluid py-5">
+            <div class="row align-items-center">
+                <!-- Kiri (Teks) -->
+                <div class="col-lg-6 px-5">
+                    <h1 class="fw-bold mb-4">Run your blog more efficiently</h1>
+
+                    <div class="mb-4">
+                        <h5 class="fw-semibold">Schedule</h5>
+                        <p class="mb-4">Write when you feel inspired and schedule posts to go live at the best time for
+                            you.</p>
+                        <h5 class="fw-semibold">Collaborate</h5>
+
+                        <p class="mb-4">Give multiple writers and editors access to your blog platform so they can help
+                            manage your content.</p>
+                        <h5 class="fw-semibold">Blog anywhere</h5>
+
+                        <p class="mb-4">Download the Wix app to write content and manage your blog anytime, anywhere.
+                        </p>
+
+                    </div>
+
+                    <a href="#" class="rounded-5 btn btn-dark">Start Blogging</a>
+                </div>
+
+                <!-- Kanan (Gambar) -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="https://static.wixstatic.com/media/0784b1_b17136f38ce9427583c1a20d8129c1c8~mv2.png/v1/fill/w_1131,h_845,al_c,q_90,enc_avif,quality_auto/0784b1_b17136f38ce9427583c1a20d8129c1c8~mv2.png"
+                        alt="Mockup" class="img-fluid rounded" style="max-width: 90%;">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="p-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 p-5">
+                <img src="https://static.wixstatic.com/media/0784b1_2c6c52c23fd94bd2ae5d02cc7f7f050f~mv2.jpg/v1/fill/w_706,h_692,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard.jpg"
+                    alt="img" class="img-fluid">
+            </div>
+            <div class="col-lg-6 p-5">
+                <h1 class="fw-semibold">Plan ahead with<br> built-in analytics</h1>
+                <p>
+                    Get insights from analytics reports, like which content best engages your audience, so you can
+                    strategically plan for the future.</p>
+                <a href="#" class="fw-semibold">Start Blogging <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 p-5">
+                <h1 class="fw-semibold">
+                    How to create<br> a blog for free</h1>
+                <p class="my-5">
+                    Follow these 5 steps to start building your blog today.</p>
+                <a href="#" class="btn btn-dark rounded-5">Start Blogging</a>
+            </div>
+
+            <div class="col-lg-6 p-5">
+                <ol>
+                    <li>
+                        Sign up for a free blog maker like Wix. Choose what kind of blog you want to create.
+                    </li>
+
+                    <li>
+                        Pick a blog name. Let people know what your blog is all about.
+                    </li>
+
+                    <li>
+                        Choose your blog template. Customize its design to match your style.
+                    </li>
+
+                    <li>
+
+                        Write and publish your first post. Launch with posts you're passionate about.
+                    </li>
+
+                    <li>
+
+                        Share your blog. Gain new readers and promote your blog on social media.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-light p-5" style="background-color: black;">
+        <!-- Header -->
+        <div class="text-center py-5">
+            <h1 class="fw-bold display-5">Learn how to grow your<br>blog from the experts</h1>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="container mb-5">
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="bg-white rounded-4 overflow-hidden">
+                        <img src="https://static.wixstatic.com/media/0784b1_71b71c56e1274620b9696cc15af393be~mv2.jpg/v1/crop/x_0,y_2,w_951,h_677/fill/w_425,h_302,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%2083.jpg"
+                            class="img-fluid" alt="Start blog">
+                        <div class="p-4">
+                            <a href="#" class="fw-bold text-dark text-decoration-underline">The ultimate guide to
+                                starting a<br> blog</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="bg-white rounded-4 overflow-hidden">
+                        <img src="https://static.wixstatic.com/media/0784b1_82d309877b98476b9289735baf726fe6~mv2.jpg/v1/fill/w_425,h_302,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%2046.jpg"
+                            class="img-fluid" alt="Promote blog">
+                        <div class="p-4">
+                            <a href="#" class="fw-bold text-dark text-decoration-underline">Unique tips for promoting
+                                your<br> blog</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="bg-white rounded-4 overflow-hidden">
+                        <img src="https://static.wixstatic.com/media/0784b1_032a290f2f1b479e93289e75d5743b50~mv2.jpg/v1/fill/w_425,h_302,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%2040.jpg"
+                            class="img-fluid" alt="Monetize blog">
+                        <div class="p-4">
+                            <a href="#" class="fw-bold text-dark text-decoration-underline">Profitable strategies for
+                                monetizing your blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Link -->
+        <div class="text-center mb-5">
+            <a href="#" class="text-white fw-bold text-decoration-underline">Watch our blogging course →</a>
+        </div>
+    </section>
+
+    <section class="p-5 text-center">
+        <!-- Support & Hire Section -->
+        <div class="container mb-5">
+            <div class="row g-4">
+                <!-- Support -->
+                <div class="col-md-6">
+                    <div class=" text-dark rounded-4 p-5 h-100" style="background-color: #eaeaea;">
+                        <h3 class="fw-bold">24/7 support</h3>
+                        <p class="my-5">Find answers to all your questions in our Help Center or request a callback to
+                            speak with an
+                            expert.</p>
+                        <a href="#" class=" text-decoration-underline">Get in Touch →</a>
+                    </div>
+                </div>
+                <!-- Hire a Professional -->
+                <div class="col-md-6">
+                    <div class=" text-dark rounded-4 p-5 h-100" style="background-color: #eaeaea;">
+                        <h3 class="fw-bold">Hire a professional</h3>
+                        <p class="my-5">Get matched with vetted agencies and freelancers to help you create, design or
+                            enhance your
+                            website.</p>
+                        <a href="#" class=" text-decoration-underline">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container p-5">
+        <!-- FAQ Heading -->
+        <h2 class="fw-bold mb-4">FAQ</h2>
+
+        <!-- Accordion -->
+        <div class="accordion border border-1 rounded-1" id="faqAccordion">
+            <!-- Item 1 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 bg-white fw-semibold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq1">
+                        1. Is it free to start a blog?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body px-4 py-3">
+
+                        It’s completely free to start a blog with Wix. Plus, you’ll get access to a complete suite of
+                        blogging features including; blog title generator, SEO tools, design capabilities, managing and
+                        collaboration tools, and analytics. </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 bg-white fw-semibold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq2">
+                        2. How do blogs make money?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body px-4 py-3">
+
+                        There are lots of ways to make money from blogging. Bloggers can supplement their incomes by
+                        offering paid subscriptions to followers for exclusive access to content or features. You can
+                        use third-party services like Google AdSense to show ads on your blog and earn commission
+                        whenever someone clicks on them. Plus, with Wix Stores, you can sell merchandise and products
+                        related to your blog.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 bg-white fw-semibold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq3">
+                        3. Can you import blog posts from WordPress?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body px-4 py-3">
+                        Yes, you can import your blog posts from a WordPress.com or a WordPress.org site in just a few
+                        steps. Check out this article from the Wix Help Center for a step-by-step guide on how to do it.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 bg-white fw-semibold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq4">
+                        4. Is Wix only for beginner bloggers?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body px-4 py-3">
+                        The Wix Blog platform is built for bloggers with any level of expertise. Every blog website
+                        comes with a suite of features like Wix Analytics and built-in SEO and marketing tools designed
+                        to help drive more traffic to your blog, grow your community, monetize your content, and so much
+                        more.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 bg-white fw-semibold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq5">
+                        5. What should you blog about?
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body px-4 py-3">
+                        You can create a blog about almost anything. Some of the most popular blog types include:
+                        lifestyle, travel, food and fashion. The important thing is to be passionate about your topic.
+                        Whether it’s a personal blog or a business blog the first step is to get started and be
+                        consistent.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section style="background-color: #add7ff;" class="p-5">
+        <div class="container p-5 text-center justify-content-center flex-column">
+            <h1 class="my-5" style="font-size: clamp(2rem, 5vw, 5rem); color:#014051">
+                Create a blog that inspires.
+            </h1>
+
+            <button class="btn hero-btn text-white mb-5" style="background-color: #014051">Get Started</button>
+
+        </div>
+    </section>
+
+    <div class="footer-container">
+        <div class="row">
+            <!-- Product Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Product</h5>
+                <ul>
+                    <li><a href="#">Website Templates</a></li>
+                    <li><a href="#">Website Builder</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Wix Features</a></li>
+                    <li><a href="#">App Market</a></li>
+                    <li><a href="#">Web Hosting</a></li>
+                    <li><a href="#">Domain Names</a></li>
+                    <li><a href="#">Website Accessibility</a></li>
+                    <li><a href="#">Mobile App Builder</a></li>
+                </ul>
+            </div>
+
+            <!-- Solutions Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Solutions</h5>
+                <ul>
+                    <li><a href="online-store.html">Online Store</a></li>
+                    <li><a href="online-booking.html">Online Booking</a></li>
+                    <li><a href="restaurant.html">Restaurant Website</a></li>
+                    <li><a href="blog.html">Blog Website</a></li>
+                    <li><a href="portfolio.html">Portfolio Website</a></li>
+                    <li><a href="ecommerce.html">eCommerce Website</a></li>
+                    <li><a href="#">Wix Studio</a></li>
+                    <li><a href="#">Enterprise Solutions</a></li>
+                    <li><a href="#">Student Website</a></li>
+                    <li><a href="#">Professional Tools</a></li>
+                    <li><a href="#">Logo Maker</a></li>
+                </ul>
+            </div>
+
+            <!-- Learn Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="#">Wix Blog</a></li>
+                    <li><a href="#">Privacy and Security Hub</a></li>
+                    <li><a href="#">SEO Learning Hub</a></li>
+                    <li><a href="#">Wix Encyclopedia</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Hire a Professional</a></li>
+                    <li><a href="#">Report Abuse</a></li>
+                    <li><a href="#">System Status</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">Press & Media</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Wix Capital</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                    <li><a href="#">Patent Notice</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- About Column -->
+            <div class="col-md-2">
+                <a class="navbar-brand" href="#">
+                    <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                        <g fill="#000" clip-path="url(#Logo_svg__a)">
+                            <path
+                                d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <p class="footer-description mt-4">
+                    The Wix website builder offers a complete solution from enterprise-grade infrastructure and business
+                    features to advanced SEO and marketing tools–enabling anyone to create and grow online.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom row">
+            <div class="col-md-6">
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end d-flex justify-content-md-end align-items-center">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <!-- Copyright -->
+                <div class="copyright ms-4">
+                    © 2006-2025 Wix.com, Inc
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder - Create a Free Website In Minutes | Wix.com</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                    <g fill="#000" clip-path="url(#Logo_svg__a)">
+                        <path
+                            d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Product dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button">
+                            Product
+                        </a>
+                        <div class="mega-dropdown dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="row"> <!-- Baris utama untuk Creation dan Business -->
+                                            <!-- Kolom Creation -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">CREATION</div>
+                                                <div class="menu-item">
+                                                    <h4>Website design</h4>
+                                                    <p>Create your site with intuitive design features.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Website templates</h4>
+                                                    <p>Choose from 900+ website templates.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>AI website builder</h4>
+                                                    <p>Create your site in no time with AI.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom Business -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">BUSINESS</div>
+                                                <div class="menu-item">
+                                                    <h4>eCommerce</h4>
+                                                    <p>Run & grow your eCommerce website.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Scheduling</h4>
+                                                    <p>Manage appointments, staff & clients.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Restaurant</h4>
+                                                    <p>Manage your menus, orders, and reservations.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom tambahan (Blog dll) -->
+                                            <div class="col-4">
+                                                <div class="menu-item">
+                                                    <h4>Blog</h4>
+                                                    <p>Share ideas & grow your traffic.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Portfolio</h4>
+                                                    <p>Showcase your work with an online portfolio.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 sidebar">
+                                        <div class="dropdown-header">ESSENTIALS</div>
+                                        <div class="menu-item">
+                                            <h4>Domain names</h4>
+                                            <p>Buy & register a domain for your website.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Web hosting</h4>
+                                            <p>Get secure & reliable website hosting.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Website security</h4>
+                                            <p>Get enterprise-grade security for your site.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Solutions dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button">
+                            Solutions
+                        </a>
+                    </li>
+
+                    <!-- Resources dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button">
+                            Resources
+                        </a>
+                    </li>
+
+                    <!-- Pricing -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                </ul>
+
+                <!-- Right side of navbar -->
+                <div class="d-flex align-items-center">
+                    <!-- Wixel -->
+                    <a class="nav-link me-3" href="#">Wixel</a>
+
+                    <!-- Wix Studio -->
+                    <a class="nav-link me-3" href="#">Wix Studio</a>
+
+                    <!-- Enterprise -->
+                    <a class="nav-link me-3" href="#">Enterprise</a>
+
+                    <!-- Globe icon -->
+                    <a class="nav-link me-3" href="#"><i class="fas fa-globe"></i></a>
+
+                    <!-- Log In -->
+                    <a class="nav-link me-3" href="login.html">Log In</a>
+
+                    <!-- Get Started button -->
+                    <button class="btn btn-get-started">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="px-5 pt-5" style="background-color: #780f32;">
+        <div class="container text-center text-light">
+            <h5 class="my-5">RESTAURANT WEBSITE BUILDER</h5>
+            <h1 class="fw-bold">Your restaurant, served online</h1>
+            <p>Grow your business and deliver the online experience your customers expect with this all-in-one business
+                solution.</p>
+            <a href="#" class="btn btn-light rounded-5">Get Started</a>
+        </div>
+        <div class="container pt-5 px-5">
+            <img src="https://static.wixstatic.com/media/0784b1_6ae667b85c4344d6845541d33ddc58c6~mv2.png/v1/fill/w_1228,h_639,al_c,q_90,enc_avif,quality_auto/Group%2047216915.png"
+                alt="#" class="img-fluid">
+        </div>
+    </section>
+
+    <section class="p-5">
+        <div class="container text-center">
+            <h1 class="fw-bold">Website templates for every cuisine</h1><br>
+            <a href="#">
+                Explore Restaurant Website Templates <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="row m-5 g-5">
+
+                <div class="col-md-6">
+
+                    <img src="img/restaurant-1.png" alt="img" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+
+                    <img src="img/restaurant-2.png" alt="img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid py-5">
+            <div class="row align-items-center">
+                <!-- Kiri (Teks) -->
+                <div class="col-lg-6 px-5">
+                    <h1 class="fw-bold mb-4">Get a robust online<br>ordering system</h1>
+
+                    <div class="mb-4">
+                        <p class="mb-4"><span class="me-2">→</span>Showcase your restaurant's dishes with an online
+                            menu.</p>
+                        <p class="mb-4"><span class="me-2">→</span>Allow customers to make reservations from your site
+                            24/7.</p>
+                        <p class="mb-4"><span class="me-2">→</span>Get paid safely and securely through multiple payment
+                            methods.</p>
+                        <p class="mb-4"><span class="me-2">→</span>Run your entire <a href="#"
+                                class="text-decoration-underline">online ordering system</a> from one dashboard.</p>
+                    </div>
+
+                    <a href="#" class="fw-semibold text-dark text-decoration-underline">Get Started →</a>
+                </div>
+
+                <!-- Kanan (Gambar) -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="https://static.wixstatic.com/media/0784b1_679a6cbe3e8a4c158d1c7e64f23c514c~mv2.jpg/v1/fill/w_948,h_1154,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0784b1_679a6cbe3e8a4c158d1c7e64f23c514c~mv2.jpg"
+                        alt="Mockup" class="img-fluid rounded shadow" style="max-width: 90%;">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container-fluid py-5">
+            <div class="row align-items-center">
+                <!-- Kiri (Teks) -->
+                <div class="col-lg-6 px-5">
+                    <h1 class="fw-bold mb-4">The tools you need to<br> grow your business</h1>
+
+                    <div class="mb-4">
+                        <p class="mb-4"><span class="me-2">→</span>Serve more customers with on-demand delivery
+                            integration.</p>
+                        <p class="mb-4"><span class="me-2">→</span>Build a strong customer base with an easily
+                            customizable loyalty program.</p>
+                        <p class="mb-4"><span class="me-2">→</span>Get a suite of built-in marketing tools to grow and
+                            promote your business.</p>
+
+                    </div>
+
+                    <a href="#" class="fw-semibold text-dark text-decoration-underline">Get Started →</a>
+                </div>
+
+                <!-- Kanan (Gambar) -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="https://static.wixstatic.com/media/bb826b_3ef212e748164623bcb19ed7ed113777~mv2.jpg/v1/fill/w_948,h_1034,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bb826b_3ef212e748164623bcb19ed7ed113777~mv2.jpg"
+                        alt="Mockup" class="img-fluid rounded shadow" style="max-width: 90%;">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="p-5 bg-dark">
+        <div class="container text-center text-light">
+            <h1 class="fw-bold my-5">Accept payments from anywhere with POS integrations</h1>
+            <p>Streamline your operations by syncing menus and orders with advanced point of sale solutions—right on
+                your dashboard.</p>
+            <a href="#" class="text-white">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+    </section>
+
+    <section class="p-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="https://static.wixstatic.com/media/0784b1_8398277b4a864977b9b0cbd462fd06de~mv2.jpg/v1/fill/w_948,h_1008,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0784b1_8398277b4a864977b9b0cbd462fd06de~mv2.jpg"
+                    alt="img" class="img-fluid">
+            </div>
+            <div class="col-lg-6 p-5">
+                <h1 class="fw-semibold">Up your service<br>with real-time data</h1>
+                <p>
+                    Use analytics to get to know your customers and increase sales, then tailor their online experience
+                    to fit their needs.</p>
+                <a href="#">Get Started <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-5">
+            <h1 class="fw-bold">Manage on the go</h1>
+            <div class="d-flex align-items-center gap-4 py-4">
+                <img src="https://static.wixstatic.com/media/0784b1_4139d72b6d514669a8f61a14e7cfc065~mv2.png/v1/fill/w_140,h_139,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/App%20Icon.png"
+                    alt="img" class="img-fluid">
+            </div>
+            <div class="section-divider"></div>
+            <div>
+                <h5 class="fw-bold">Wix app</h5>
+                <p class="text-muted col-md-6">Run your restaurant from anywhere with the Wix app. Manage online
+                    ordering and get
+                    actionable insights on how to increase sales.</p>
+                <a href="#" class="text-decoration-underline">Get the Wix App →</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid py-5 bg-black text-white">
+            <div class="container">
+                <div class="row  align-items-center">
+                    <div class="col-lg-6 mb-4">
+                        <h2 class="fw-bold">Get inspired,<br>gain new skills<br>and see what's<br>trending</h2>
+                        <a href="#" class="text-white text-decoration-underline fw-semibold">Learn More From Our Blog
+                            →</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/card-resto-1.png" class="card-img-top img-fluid rounded-3" alt="...">
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/card-resto-2.png" class="card-img-top img-fluid rounded-3" alt="...">
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/card-resto-3.png" class="card-img-top img-fluid rounded-3" alt="...">
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/card-resto-4.png" class="card-img-top img-fluid rounded-3" alt="...">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h1 class="fw-semibold p-5">We’re here to help</h1>
+        <hr>
+        <div class="col-lg-6 p-5">
+            <h2>Hire an expert
+            </h2>
+            <p>Find the right Wix-certified website designers, SEO experts, web developers and more to suit your needs
+                and
+                budget. They'll build the site, while you focus on the dinner rush</p>
+            <a href="#" class="btn btn-dark rounded-5">Get Started</a>
+
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 p-5">
+                <h1 class="fw-semibold">
+
+                    How to create your restaurant website
+                </h1>
+                <p>Follow these steps in the Wix restaurant website builder.</p>
+                <a href="#" class="btn btn-dark rounded-5">Get Started</a>
+
+            </div>
+            <div class="col-lg-6 p-5">
+                <ol>
+
+                    <li>
+                        ​Get inspired by top restaurant websites.
+
+                    </li>
+
+                    <li>
+
+                        ​Select a professionally-designed template.
+                    </li>
+
+                    <li>
+
+                        Customize it to match the look and feel of your restaurant.
+                    </li>
+
+                    <li>
+
+                        ​Create your online menu and start adding dishes.
+                        ​ </li>
+
+                    <li>
+
+                        Set up online ordering and reservations.
+                    </li>
+
+                    <li>
+
+                        Grow your business with powerful marketing tools.
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container p-5">
+            <h1 class="fw-bold display-4 mb-5">FAQ</h1>
+
+            <hr>
+
+            <!-- Question 1 -->
+            <div class="row py-4">
+                <div class="col-md-1">
+                    <h4 class="fw-bold">1.</h4>
+                </div>
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <p class="fw-medium fs-5 mb-0">How can I take my<br>restaurant online?</p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        Wix Restaurants delivers all the <a href="#">features</a> you need <a href="#">to get your own
+                            restaurant online</a> and ready to serve.
+                        From online ordering to search engine optimization, we’ve got you covered. Start with the
+                        restaurant website builder, then serve your customers online.
+                        If you're looking for a tasteful name for your food business, be sure to check out the free <a
+                            href="#">Restaurant Name Generator</a>.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Question 2 -->
+            <div class="row py-4">
+                <div class="col-md-1">
+                    <h4 class="fw-bold">2.</h4>
+                </div>
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <p class="fw-medium fs-5 mb-0">What is an online food<br>ordering system?</p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        An online food ordering system lets customers view your menu, place an order, and pay right on
+                        your site. Wix Restaurants offers a commission-free online ordering system,
+                        so you can feed your customers and your bottom line.
+                        <a href="#">Learn how to set up your online ordering system</a> so you can reach more customers.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row py-4">
+                <div class="col-md-1">
+                    <h4 class="fw-bold">3.</h4>
+                </div>
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <p class="fw-medium fs-5 mb-0">What does a restaurant<br> website need?</p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        A great restaurant website builder will have the following ingredients:
+                    </p>
+                    <ol>
+                        <li>
+
+                            An online menu
+                        </li>
+                        <li>
+
+                            Online ordering options
+                        </li>
+                        <li>
+
+                            Reservations
+                        </li>
+                        <li>
+
+                            A loyalty program
+                        </li>
+                        <li>
+
+                            An eye-catching logo
+                        </li>
+                        <li>
+
+                            Social media campaigns
+                        </li>
+                        <li>
+
+                            Google Workspace
+                        </li>
+                        <li>
+
+                            A custom website design
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row py-4">
+                <div class="col-md-1">
+                    <h4 class="fw-bold">4.</h4>
+                </div>
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <p class="fw-medium fs-5 mb-0">How can I optimize my<br> restaurant site for SEO?</p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        All Wix sites come with best-practice SEO defaults, including utilizing server-side rendering,
+                        customizable meta tags for all site pages, structured data markup, dynamic XML sitemaps, and
+                        more. Plus, you get a suite of built-in SEO tools to help you compete in organic search.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section style="background-color: #7b0001;" class="p-5">
+        <div class="container p-5 text-center justify-content-center flex-column">
+            <h1 class="mt-5" style="font-size: clamp(2rem, 5vw, 5rem); color:#ffc2fe">
+                Your restaurant website. Your recipe for success.
+            </h1>
+
+            <button class="btn hero-btn text-dark mb-5" style="background-color: #ffc2fe">Get Started</button>
+
+        </div>
+    </section>
+
+    <div class="footer-container">
+        <div class="row">
+            <!-- Product Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Product</h5>
+                <ul>
+                    <li><a href="#">Website Templates</a></li>
+                    <li><a href="#">Website Builder</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Wix Features</a></li>
+                    <li><a href="#">App Market</a></li>
+                    <li><a href="#">Web Hosting</a></li>
+                    <li><a href="#">Domain Names</a></li>
+                    <li><a href="#">Website Accessibility</a></li>
+                    <li><a href="#">Mobile App Builder</a></li>
+                </ul>
+            </div>
+
+            <!-- Solutions Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Solutions</h5>
+                <ul>
+                    <li><a href="online-store.html">Online Store</a></li>
+                    <li><a href="online-booking.html">Online Booking</a></li>
+                    <li><a href="restaurant.html">Restaurant Website</a></li>
+                    <li><a href="blog.html">Blog Website</a></li>
+                    <li><a href="portfolio.html">Portfolio Website</a></li>
+                    <li><a href="ecommerce.html">eCommerce Website</a></li>
+                    <li><a href="#">Wix Studio</a></li>
+                    <li><a href="#">Enterprise Solutions</a></li>
+                    <li><a href="#">Student Website</a></li>
+                    <li><a href="#">Professional Tools</a></li>
+                    <li><a href="#">Logo Maker</a></li>
+                </ul>
+            </div>
+
+            <!-- Learn Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="#">Wix Blog</a></li>
+                    <li><a href="#">Privacy and Security Hub</a></li>
+                    <li><a href="#">SEO Learning Hub</a></li>
+                    <li><a href="#">Wix Encyclopedia</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Hire a Professional</a></li>
+                    <li><a href="#">Report Abuse</a></li>
+                    <li><a href="#">System Status</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">Press & Media</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Wix Capital</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                    <li><a href="#">Patent Notice</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- About Column -->
+            <div class="col-md-2">
+                <a class="navbar-brand" href="#">
+                    <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                        <g fill="#000" clip-path="url(#Logo_svg__a)">
+                            <path
+                                d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <p class="footer-description mt-4">
+                    The Wix website builder offers a complete solution from enterprise-grade infrastructure and business
+                    features to advanced SEO and marketing tools–enabling anyone to create and grow online.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom row">
+            <div class="col-md-6">
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end d-flex justify-content-md-end align-items-center">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <!-- Copyright -->
+                <div class="copyright ms-4">
+                    © 2006-2025 Wix.com, Inc
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder - Create a Free Website In Minutes | Wix.com</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                    <g fill="#000" clip-path="url(#Logo_svg__a)">
+                        <path
+                            d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Product dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button">
+                            Product
+                        </a>
+                        <div class="mega-dropdown dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="row"> <!-- Baris utama untuk Creation dan Business -->
+                                            <!-- Kolom Creation -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">CREATION</div>
+                                                <div class="menu-item">
+                                                    <h4>Website design</h4>
+                                                    <p>Create your site with intuitive design features.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Website templates</h4>
+                                                    <p>Choose from 900+ website templates.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>AI website builder</h4>
+                                                    <p>Create your site in no time with AI.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom Business -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">BUSINESS</div>
+                                                <div class="menu-item">
+                                                    <h4>eCommerce</h4>
+                                                    <p>Run & grow your eCommerce website.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Scheduling</h4>
+                                                    <p>Manage appointments, staff & clients.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Restaurant</h4>
+                                                    <p>Manage your menus, orders, and reservations.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom tambahan (Blog dll) -->
+                                            <div class="col-4">
+                                                <div class="menu-item">
+                                                    <h4>Blog</h4>
+                                                    <p>Share ideas & grow your traffic.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Portfolio</h4>
+                                                    <p>Showcase your work with an online portfolio.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 sidebar">
+                                        <div class="dropdown-header">ESSENTIALS</div>
+                                        <div class="menu-item">
+                                            <h4>Domain names</h4>
+                                            <p>Buy & register a domain for your website.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Web hosting</h4>
+                                            <p>Get secure & reliable website hosting.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Website security</h4>
+                                            <p>Get enterprise-grade security for your site.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Solutions dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button">
+                            Solutions
+                        </a>
+                    </li>
+
+                    <!-- Resources dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button">
+                            Resources
+                        </a>
+                    </li>
+
+                    <!-- Pricing -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                </ul>
+
+                <!-- Right side of navbar -->
+                <div class="d-flex align-items-center">
+                    <!-- Wixel -->
+                    <a class="nav-link me-3" href="#">Wixel</a>
+
+                    <!-- Wix Studio -->
+                    <a class="nav-link me-3" href="#">Wix Studio</a>
+
+                    <!-- Enterprise -->
+                    <a class="nav-link me-3" href="#">Enterprise</a>
+
+                    <!-- Globe icon -->
+                    <a class="nav-link me-3" href="#"><i class="fas fa-globe"></i></a>
+
+                    <!-- Log In -->
+                    <a class="nav-link me-3" href="login.html">Log In</a>
+
+                    <!-- Get Started button -->
+                    <button class="btn btn-get-started">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="my-5"
+        style="background-image: url('img/bg-online-booking.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-12 p-5 text-dark">
+                    <h1 class="mt-3 fw-bold">Your All-in-One<br> Scheduling Software</h1>
+                    <p class="py-3">Manage your bookings, payments, staff, clients, reminders, and more—from one place.
+                    </p>
+                    <a href="#" class="btn btn-primary rounded-5 mb-3">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 overflow-hidden">
+        <div class="row align-items-center">
+
+            <!-- LEFT SIDE -->
+            <div class="col-lg-6">
+                <img src="img/booking-1.png" alt="img" class="img-fluid">
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="col-lg-6 mt-4 mt-lg-0 p-5">
+                <h2 class="fw-bold">Online Scheduling</h2>
+                <p class="mt-3">
+                    Showcase and offer your services with a professional online scheduling platform. Create and
+                    customize your site from
+                    <a href="#" class="text-decoration-underline">500+ designed templates</a>. Streamline your
+                    business by managing your schedule with an all-in-one booking solution.
+                </p>
+                <ul class="mt-3">
+                    <li>Display services, timetable and pricing</li>
+                    <li>Turn leads into clients directly from live chat</li>
+                    <li>Collect client info with custom booking forms</li>
+                    <li>Offer waitlists and manage your attendance</li>
+                    <li>Send SMS and email booking reminders</li>
+                </ul>
+                <a href="#" class="fw-bold text-decoration-underline">Get Started →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 overflow-hidden">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 mt-4 mt-lg-0 p-5">
+                <h2 class="fw-bold">Sell Services</h2>
+                <p class="mt-3">
+                    Drive revenue and fill up your schedule by selling your services right from your website.
+                    Reduce back and forth communication by letting your clients easily book services from your calendar.
+                    Sell any variety of services and offer them online to reach clients anywhere.
+                </p>
+                <ul class="mt-3">
+                    <li><strong>Appointments:</strong> Let clients book private meetings with you.</li>
+                    <li><strong>Classes:</strong> Sell recurring services that clients book one at a time.</li>
+                    <li><strong>Courses:</strong> Sell a complete set of online and pre-recorded services.</li>
+                    <li><strong>Online:</strong> Reach clients anywhere by taking your service online.</li>
+                    <li>Bundle your services into membership plans and packages.</li>
+                </ul>
+                <a href="#" class="fw-bold text-decoration-underline">Get Started →</a>
+            </div>
+
+            <div class="col-lg-6">
+                <img src="https://static.wixstatic.com/media/311dce_0b57ed955c164e179790d03c07409995~mv2.png/v1/fill/w_948,h_824,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/311dce_0b57ed955c164e179790d03c07409995~mv2.png"
+                    alt="img" class="img-fluid">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-5 overflow-hidden">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <img src="img/booking-2.png" alt="img" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0 p-5">
+                <h2 class="fw-bold mt-5">Calendar Management</h2>
+                <p class="mt-3">
+                    Manage all your calendars from one dashboard. Get the flexibility you need to make online scheduling
+                    work for your business.
+                </p>
+                <ul class="mt-3">
+                    <li>Set default business hours</li>
+                    <li>Schedule around your real-time availability</li>
+                    <li>Sync your team’s calendars</li>
+                    <li>Auto adjust bookings for time zones</li>
+                    <li>Create booking rules and policies</li>
+                </ul>
+                <a href="#" class="fw-bold text-decoration-underline">Get Started →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 overflow-hidden">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 mt-4 mt-lg-0 p-5">
+                <h2 class="fw-bold">Payment & Financial Solutions</h2>
+                <p class="mt-3">
+                    Let clients pay with cash, credit or digital wallets. Connect to your preferred payment provider and
+                    manage all transactions and finances from one integrated dashboard.
+                </p>
+                <ul class="mt-3">
+                    <li>Connect a payment provider—Wix Payments, PayPal, Stripe, Alipay and more</li>
+                    <li>Accept payment in 40+ currencies</li>
+                    <li>Send clients price quotes and invoices</li>
+                    <li>Integrate with professional accounting tools like QuickBooks</li>
+                </ul>
+                <a href="#" class="fw-bold text-decoration-underline">Get Started →</a>
+            </div>
+
+            <div class="col-lg-6">
+                <img src="img/booking-3.png" alt="img" class="img-fluid">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 overflow-hidden">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <img src="img/booking-4.png" alt="img" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0 p-5">
+                <h2 class="fw-bold">Memberships & Packages</h2>
+                <p class="mt-3">
+                    Offer free trials, membership plans, subscriptions, punch cards and limited-time discounts.
+                </p>
+                <ul class="mt-3">
+                    <li>Accept recurring payments</li>
+                    <li>Open trial sessions</li>
+                    <li>Provide exclusive services</li>
+                    <li>Sell members-only content</li>
+                    <li>Offer coupons and discounts</li>
+                </ul>
+                <a href="#" class="fw-bold text-decoration-underline">Get Started →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 overflow-hidden">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mt-4 mt-lg-0 p-5">
+                <h2 class="fw-bold">Staff Management</h2>
+                <p class="mt-3">
+                    Manage staff schedules and track their performance. Set roles and permissions so staff can book
+                    clients and manage their sessions.
+                </p>
+                <ul class="mt-3">
+                    <li>Set roles and permissions</li>
+                    <li>Add your staff members’ hours</li>
+                    <li>Assign sessions and classes</li>
+                    <li>Sync your team calendars</li>
+                    <li>Track staff performance</li>
+                </ul>
+                <a href="#" class="fw-bold text-decoration-underline">Get Started →</a>
+            </div>
+
+            <div class="col-lg-6">
+                <img src="img/booking-5.png" alt="img" class="img-fluid">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 overflow-hidden">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <img src="img/booking-6.png" alt="img" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0 p-5">
+                <h2 class="fw-bold">Client Management</h2>
+                <p class="mt-3">
+                    Build and manage your client relationships. Send automated confirmations, updates and reminders
+                    about upcoming sessions.
+                </p>
+                <ul class="mt-3">
+                    <li>Get new clients & contacts</li>
+                    <li>Create detailed member profiles</li>
+                    <li>Reduce no-shows with SMS & email reminders</li>
+                    <li>Chat with members directly</li>
+                    <li>Send class-wide updates</li>
+                </ul>
+                <a href="#" class="fw-bold text-decoration-underline">Get Started →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 overflow-hidden">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mt-4 mt-lg-0 p-5">
+                <h2 class="fw-bold">Grow Your Business</h2>
+                <p class="mt-3">
+                    Get advanced bookings analytics to track your performance and keep improving your business. Review
+                    your top services, staff performance, site traffic and more.
+                </p>
+                <ul class="mt-3">
+                    <li>Track client attendance</li>
+                    <li>Find out how visitors get to you</li>
+                    <li>Focus on your most popular services</li>
+                    <li>Analyze finances</li>
+                    <li>Compare new vs. returning clients</li>
+                </ul>
+                <a href="#" class="fw-bold text-decoration-underline">Get Started →</a>
+            </div>
+
+            <div class="col-lg-6">
+                <img src="img/booking-7.png" alt="img" class="img-fluid">
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-5">
+
+            <!-- Judul utama -->
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h2 class="fw-bold fs-1">Get the Wix Mobile App for Scheduling</h2>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-muted">Stay connected to your business and clients with the Wix app and Wix member
+                        app.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Gambar dan daftar -->
+            <div class="row align-items-start">
+                <!-- Kolom kiri -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/hp-1.png" alt="Wix Business App" class="img-fluid rounded"
+                            style="max-height: 500px;">
+                    </div>
+                    <h5 class="fw-bold mt-4 border-top border-dark py-3">Business software for you:</h5>
+                    <ul class="mt-2">
+                        <li>Manage your sessions, staff and booking calendar</li>
+                        <li>Check-in clients and chat with members</li>
+                        <li>Take bookings and accept payments anytime</li>
+                        <li>Review member profiles for details and payments</li>
+                        <li>Get analytics on traffic, attendance and revenue</li>
+                    </ul>
+                </div>
+
+                <!-- Kolom kanan -->
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/hp-2.png" alt="Wix Client App" class="img-fluid rounded"
+                            style="max-height: 500px;">
+                    </div>
+                    <h5 class="fw-bold mt-4 border-top border-dark py-3">Scheduling app for clients:</h5>
+                    <ul class="mt-2">
+                        <li>Book classes and pay on the go</li>
+                        <li>Join waitlists and get notified if a spot opens up</li>
+                        <li>Update member profiles</li>
+                        <li>Message community members</li>
+                        <li>Shop branded merchandise</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://static.wixstatic.com/media/311dce_1d936d66b2a840f7bbd803d7e4b1a88e~mv2.png/v1/fill/w_186,h_72,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/image.png"
+                alt="img" class="img-fluid">
+            <img src="https://static.wixstatic.com/media/311dce_2a17124bccaf494589051fd9a983d241~mv2.png/v1/fill/w_180,h_132,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ap%2C550x550%2C16x12%2C1%2Ctransparent%2Ct.png"
+                alt="img" class="img-fluid">
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-5">
+            <h2 class="fw-bold fs-1">Promote Your Business with Advanced Marketing Tools</h2>
+            <img src="https://static.wixstatic.com/media/311dce_03cfd09fe0bb4d68bf23f0e8d508493c~mv2.png/v1/fill/w_1266,h_452,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Marketing%20Tools%20.png"
+                alt="img" class="img-fluid">
+        </div>
+        <div class="container p-5">
+
+            <div class="row mb-5">
+                <!-- Share Engaging Social Posts -->
+                <div class="col-md-6 mb-4 px-5">
+                    <h5 class="fw-bold">Share Engaging Social Posts</h5>
+                    <p class="mb-0">
+                        Stand out on Facebook and Instagram. Create instantly shareable content with
+                        <a href="#" class="text-decoration-underline">Wix Video Maker and Social Posts</a>.
+                    </p>
+                </div>
+
+                <!-- Drive Traffic from Search Engines -->
+                <div class="col-md-6 mb-4 px-5">
+                    <h5 class="fw-bold">Drive Traffic from Search Engines</h5>
+                    <p class="mb-0">
+                        Optimize your site for search engines with advanced
+                        <a href="#" class="text-decoration-underline">SEO tools</a>. Start with your personal SEO plan
+                        and reach new clients on search.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <!-- Turn Leads into Clients -->
+                <div class="col-md-6 mb-4 px-5">
+                    <h5 class="fw-bold">Turn Leads into Clients</h5>
+                    <p class="mb-0">
+                        <a href="#" class="text-decoration-underline">Collect contact info from your site visitors with
+                            a customizable form. Ask about their interests so you can recommend specific services.</a>
+                    </p>
+                </div>
+
+                <!-- Promote with Email Marketing -->
+                <div class="col-md-6 mb-4 px-5">
+                    <h5 class="fw-bold">Promote with Email Marketing</h5>
+                    <p class="mb-0">
+                        <a href="#" class="text-decoration-underline">Send branded emails highlighting your services.
+                            Lead subscribers back to your business site to book.</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tombol -->
+            <div class="text-start">
+                <a href="#" class="btn btn-dark rounded-pill px-4 py-2">Find Out More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section style="background-color: #eaeaea;">
+        <div class="container py-5">
+            <!-- Judul -->
+            <h2 class="text-center fw-bold mb-5">Choose from 100s of Online<br>Scheduling Templates</h2>
+
+            <!-- Baris template -->
+            <div class="row g-4 justify-content-center">
+
+                <!-- Card 1 -->
+                <div class="col-md-5">
+                    <img src="img/card-1.png" alt="img" class="img-fluid">
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-5">
+                    <img src="img/card-2.png" alt="img" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="container text-center p-5">
+                <a href="#">
+                    Explore All Templates <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#">
+                    Explore Wix Fitness <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-5">
+            <!-- Judul -->
+            <div class="text-center my-5">
+                <h2 class="fw-bold">Get Tips to Grow Your Business Online</h2>
+                <p class="text-muted">Learn best practices for your appointment scheduler,<br>marketing, client
+                    management and more.</p>
+            </div>
+
+            <!-- Cards -->
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="border bg-white h-100">
+                        <img src="https://static.wixstatic.com/media/311dce_2ffd7b63bde24ab9a149a5f4b407b66f~mv2.png/v1/crop/x_4,y_0,w_316,h_210/fill/w_367,h_244,al_c,lg_1,q_85,enc_avif,quality_auto/bookings.png"
+                            alt="Wix Bookings" class="img-fluid">
+                        <div class="p-3">
+                            <p class="mb-2">Take Bookings & Get Payments 24/7 with Wix Bookings</p>
+                            <a href="#" class="fw-semibold text-decoration-none">
+                                Read More <span class="ms-1">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="border bg-white h-100">
+                        <img src="https://static.wixstatic.com/media/311dce_c808d6dde48a4c9799f63a203e3a1ac5~mv2.jpg/v1/crop/x_32,y_11,w_578,h_385/fill/w_367,h_244,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Professional-min.jpg"
+                            alt="Professional Site" class="img-fluid">
+                        <div class="p-3">
+                            <p class="mb-2">How to Create a Professional Service Website for Your Business</p>
+                            <a href="#" class="fw-semibold text-decoration-none">
+                                Read More <span class="ms-1">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="border bg-white h-100">
+                        <img src="https://static.wixstatic.com/media/311dce_eace53e3ab7c4326bbc3a42adc7df04b~mv2.jpg/v1/fill/w_367,h_244,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/mobile-min.jpg"
+                            alt="Mobile App" class="img-fluid">
+                        <div class="p-3">
+                            <p class="mb-2">Wix Mobile App: Manage Your Business From Your Smartphone</p>
+                            <a href="#" class="fw-semibold text-decoration-none">
+                                Read More <span class="ms-1">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-4 g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="border bg-white h-100">
+                        <img src="https://static.wixstatic.com/media/311dce_7bbb87bb57b742ca89e0ac9d3e89dc36~mv2.jpg/v1/crop/x_19,y_0,w_633,h_422/fill/w_367,h_244,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/salon-min.jpg"
+                            alt="Wix Bookings" class="img-fluid">
+                        <div class="p-3">
+                            <p class="mb-2">How to Create a Showstopping Salon Website</p>
+                            <a href="#" class="fw-semibold text-decoration-none">
+                                Read More <span class="ms-1">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="border bg-white h-100">
+                        <img src="https://static.wixstatic.com/media/311dce_c0cc98f14e2649e6a5ef5529ba72dd2c~mv2.jpg/v1/fill/w_367,h_244,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fittness-min.jpg"
+                            alt="Professional Site" class="img-fluid">
+                        <div class="p-3">
+                            <p class="mb-2">How to Start a Fitness Business with Wix Fitness</p>
+                            <a href="#" class="fw-semibold text-decoration-none">
+                                Read More <span class="ms-1">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="border bg-white h-100">
+                        <img src="https://static.wixstatic.com/media/311dce_88aa83b44a614e0e96a27e4967cb8562~mv2.png/v1/fill/w_367,h_244,al_c,lg_1,q_85,enc_avif,quality_auto/11%20uniqe.png"
+                            alt="Mobile App" class="img-fluid">
+                        <div class="p-3">
+                            <p class="mb-2">11 Unique Wix Bookings Sites That Got It Right</p>
+                            <a href="#" class="fw-semibold text-decoration-none">
+                                Read More <span class="ms-1">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tombol -->
+            <div class="text-center">
+                <a href="#" class="btn btn-dark rounded-pill px-4 py-2">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #eaeaea;">
+        <div class="container py-5">
+            <h2 class="fw-bold mb-5">FAQs</h2>
+
+            <!-- FAQ Item 1 -->
+            <div class="row border-top border-dark py-4">
+                <div class="col-md-1 fw-semibold">1.</div>
+                <div class="col-md-4 fw-semibold">What is an online booking system?</div>
+                <div class="col-md-7 text-muted">
+                    An online booking system is scheduling software you can use to accept bookings and reservations
+                    online.
+                    With Wix, your appointment scheduler is completely integrated with your website.
+                    You can manage your business anywhere you have WiFi, on desktop or on mobile.
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="row border-top border-dark py-4">
+                <div class="col-md-1 fw-semibold">2.</div>
+                <div class="col-md-4 fw-semibold">Why do I need online scheduling?</div>
+                <div class="col-md-7 text-muted">
+                    An appointment scheduling software simplifies the way you manage your business.
+                    That way, you get more headspace and time to focus on your clients.
+                    Avoid classic scheduling complications by letting your clients self-book.
+                    Plus, manage your schedule, client communication and finances all in one place.
+                </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="row border-top py-4">
+                <div class="col-md-1 fw-semibold">3.</div>
+                <div class="col-md-4 fw-semibold">How can I get started with Wix Bookings?</div>
+                <div class="col-md-7 text-muted">
+                    1. Sign up or log in to Wix.<br>
+                    2. Choose a professional website template with Wix Bookings built right in.<br>
+                    3. Add your first service with details and times.<br>
+                    4. Set up a payment method to accept online payments.<br>
+                    5. Create a service package or plan to offer your clients.<br>
+                    6. Start promoting your business.
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="row border-top py-4">
+                <div class="col-md-1 fw-semibold">4.</div>
+                <div class="col-md-4 fw-semibold">What types of services can I offer?</div>
+                <div class="col-md-7 text-muted">
+                    You can select from any of our industry-leading website templates, featuring fitness, beauty,
+                    education, photography, consulting, and more. <br><br>
+                    Easily set up your classes, 1-on-1 appointments, group sessions, courses, and intro calls, so
+                    clients can book your time.
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="row border-top py-4">
+                <div class="col-md-1 fw-semibold">5.</div>
+                <div class="col-md-4 fw-semibold">Does Wix Bookings have a mobile scheduling app?</div>
+                <div class="col-md-7 text-muted">
+                    Yes. Download the Wix Mobile App to add a new service, update your schedule, check-in clients, chat
+                    with members and review analytics.
+                    Clients can download the Wix Mobile App too. They’ll be able to book services, pay and chat with
+                    you.
+                </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="row border-top border-bottom py-4">
+                <div class="col-md-1 fw-semibold">6.</div>
+                <div class="col-md-4 fw-semibold">Can I use the Wix online scheduling software for free?</div>
+                <div class="col-md-7 text-muted">
+                    You can create a Wix Bookings site and present your services for free.
+                    In order to accept bookings and payments, you need to have a Wix Business Premium Plan.
+                    Each of these plans includes a full suite of features and tools to manage and grow your business
+                    from desktop and on-the-go with the Wix Mobile App.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-5">
+            <!-- Judul -->
+            <div class="text-start mb-3">
+                <h2 class="fw-bold">More Essentials for Your Wix Business</h2>
+                <p class="text-muted">Discover ways to promote, brand and manage your business.</p>
+            </div>
+
+            <!-- Garis -->
+            <hr class="mb-5">
+
+            <!-- 3 Kolom Atas -->
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4">
+                    <p class="fw-semibold mb-1"><u>Drag and Drop Design</u></p>
+                    <p class="text-muted mb-0">Choose from 500+ templates to personalize for your brand.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <p class="fw-semibold mb-1"><u>Domain Name</u></p>
+                    <p class="text-muted mb-0">Get found on Google with a domain that matches your business.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <p class="fw-semibold mb-1"><u>Free Web Hosting</u></p>
+                    <p class="text-muted mb-0">Build a secure business site that loads quickly around the world.</p>
+                </div>
+            </div>
+
+            <!-- 3 Kolom Bawah -->
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4">
+                    <p class="fw-semibold mb-1"><u>Business Name Generator</u></p>
+                    <p class="text-muted mb-0">Launch your business with a unique and memorable name.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <p class="fw-semibold mb-1"><u>Logo Maker</u></p>
+                    <p class="text-muted mb-0">Design and customize a professional logo for your business.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <p class="fw-semibold mb-1"><u>Business Email</u></p>
+                    <p class="text-muted mb-0">Use a professional email address and build client trust.</p>
+                </div>
+            </div>
+
+            <!-- Garis -->
+            <hr class="my-5">
+
+            <!-- Tombol CTA -->
+            <div class="d-flex flex-column flex-md-row justify-content-start gap-3">
+                <a href="#" class="btn btn-dark rounded-pill px-4 py-2">Get Started</a>
+                <a href="#" class="text-decoration-underline align-self-center fw-semibold">
+                    Explore Wix Marketing Tools &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #074749;" class="p-5">
+        <div class="container p-5 text-center justify-content-center flex-column">
+            <h3 style="color:#d1f0b1">WIX BOOKINGS</h3>
+            <h1 class="mt-5" style="font-size: clamp(2rem, 5vw, 5rem); color:#d1f0b1">
+                Grow your business with a complete online scheduling system.
+            </h1>
+
+            <button class="btn hero-btn text-dark my-5" style="background-color: #d1f0b1;">Get Started</button>
+
+        </div>
+    </section>
+
+    <div class="footer-container">
+        <div class="row">
+            <!-- Product Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Product</h5>
+                <ul>
+                    <li><a href="#">Website Templates</a></li>
+                    <li><a href="#">Website Builder</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Wix Features</a></li>
+                    <li><a href="#">App Market</a></li>
+                    <li><a href="#">Web Hosting</a></li>
+                    <li><a href="#">Domain Names</a></li>
+                    <li><a href="#">Website Accessibility</a></li>
+                    <li><a href="#">Mobile App Builder</a></li>
+                </ul>
+            </div>
+
+            <!-- Solutions Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Solutions</h5>
+                <ul>
+                    <li><a href="online-store.html">Online Store</a></li>
+                    <li><a href="online-booking.html">Online Booking</a></li>
+                    <li><a href="restaurant.html">Restaurant Website</a></li>
+                    <li><a href="blog.html">Blog Website</a></li>
+                    <li><a href="portfolio.html">Portfolio Website</a></li>
+                    <li><a href="ecommerce.html">eCommerce Website</a></li>
+                    <li><a href="#">Wix Studio</a></li>
+                    <li><a href="#">Enterprise Solutions</a></li>
+                    <li><a href="#">Student Website</a></li>
+                    <li><a href="#">Professional Tools</a></li>
+                    <li><a href="#">Logo Maker</a></li>
+                </ul>
+            </div>
+
+            <!-- Learn Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="#">Wix Blog</a></li>
+                    <li><a href="#">Privacy and Security Hub</a></li>
+                    <li><a href="#">SEO Learning Hub</a></li>
+                    <li><a href="#">Wix Encyclopedia</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Hire a Professional</a></li>
+                    <li><a href="#">Report Abuse</a></li>
+                    <li><a href="#">System Status</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">Press & Media</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Wix Capital</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                    <li><a href="#">Patent Notice</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- About Column -->
+            <div class="col-md-2">
+                <a class="navbar-brand" href="#">
+                    <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                        <g fill="#000" clip-path="url(#Logo_svg__a)">
+                            <path
+                                d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <p class="footer-description mt-4">
+                    The Wix website builder offers a complete solution from enterprise-grade infrastructure and business
+                    features to advanced SEO and marketing tools–enabling anyone to create and grow online.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom row">
+            <div class="col-md-6">
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end d-flex justify-content-md-end align-items-center">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <!-- Copyright -->
+                <div class="copyright ms-4">
+                    © 2006-2025 Wix.com, Inc
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder - Create a Free Website In Minutes | Wix.com</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                    <g fill="#000" clip-path="url(#Logo_svg__a)">
+                        <path
+                            d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Product dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button">
+                            Product
+                        </a>
+                        <div class="mega-dropdown dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="row"> <!-- Baris utama untuk Creation dan Business -->
+                                            <!-- Kolom Creation -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">CREATION</div>
+                                                <div class="menu-item">
+                                                    <h4>Website design</h4>
+                                                    <p>Create your site with intuitive design features.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Website templates</h4>
+                                                    <p>Choose from 900+ website templates.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>AI website builder</h4>
+                                                    <p>Create your site in no time with AI.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom Business -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">BUSINESS</div>
+                                                <div class="menu-item">
+                                                    <h4>eCommerce</h4>
+                                                    <p>Run & grow your eCommerce website.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Scheduling</h4>
+                                                    <p>Manage appointments, staff & clients.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Restaurant</h4>
+                                                    <p>Manage your menus, orders, and reservations.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom tambahan (Blog dll) -->
+                                            <div class="col-4">
+                                                <div class="menu-item">
+                                                    <h4>Blog</h4>
+                                                    <p>Share ideas & grow your traffic.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Portfolio</h4>
+                                                    <p>Showcase your work with an online portfolio.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 sidebar">
+                                        <div class="dropdown-header">ESSENTIALS</div>
+                                        <div class="menu-item">
+                                            <h4>Domain names</h4>
+                                            <p>Buy & register a domain for your website.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Web hosting</h4>
+                                            <p>Get secure & reliable website hosting.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Website security</h4>
+                                            <p>Get enterprise-grade security for your site.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Solutions dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button">
+                            Solutions
+                        </a>
+                    </li>
+
+                    <!-- Resources dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button">
+                            Resources
+                        </a>
+                    </li>
+
+                    <!-- Pricing -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                </ul>
+
+                <!-- Right side of navbar -->
+                <div class="d-flex align-items-center">
+                    <!-- Wixel -->
+                    <a class="nav-link me-3" href="#">Wixel</a>
+
+                    <!-- Wix Studio -->
+                    <a class="nav-link me-3" href="#">Wix Studio</a>
+
+                    <!-- Enterprise -->
+                    <a class="nav-link me-3" href="#">Enterprise</a>
+
+                    <!-- Globe icon -->
+                    <a class="nav-link me-3" href="#"><i class="fas fa-globe"></i></a>
+
+                    <!-- Log In -->
+                    <a class="nav-link me-3" href="login.html">Log In</a>
+
+                    <!-- Get Started button -->
+                    <button class="btn btn-get-started">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="notification">
+        <div class="mt-3 container text-center pt-2"
+            style="background-color: #c7d1ff; border-radius: 10px; color:#101585">
+            <p class="pb-2">14-day money-back guarantee</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-5" style="background-color: #e2efff; border-radius: 20px">
+            <!-- Header Section -->
+            <div class="text-center">
+                <h1 class="main-title">Find the right plan for you</h1>
+                <p class="subtitle">Create your site for free and choose a plan when you're ready.</p>
+
+                <a href="#" class="btn start-btn">Start for Free <i class="fas fa-arrow-right ms-1"></i></a>
+
+                <div class="d-flex justify-content-center align-items-center flex-wrap plan-features">
+                    <div class="all-plans-text">All plans include:</div>
+
+                    <div class="feature-chip">
+                        <i class="fas fa-globe me-2"></i>
+                        Custom domain
+                    </div>
+
+                    <div class="feature-chip">
+                        <i class="fas fa-server me-2"></i>
+                        Reliable web hosting
+                    </div>
+
+                    <div class="feature-chip">
+                        <i class="fas fa-magic me-2"></i>
+                        AI creation tools
+                    </div>
+
+                    <div class="feature-chip">
+                        <i class="fas fa-headset me-2"></i>
+                        24/7 customer care
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Cards Section -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <!-- Business Elite Card -->
+                <div class="col">
+                    <div class="plan-card">
+                        <h2 class="plan-title">Business Elite</h2>
+                        <p class="plan-subtitle">Scale your business</p>
+                        <h3 class="price">$159<span>/mo</span></h3>
+
+                        <ul class="feature-list">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Free domain for 1 year</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>Unlimited</strong> storage space</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Multi-cloud hosting</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>Advanced</strong> marketing suite</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Accept payments</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>Advanced</strong> eCommerce</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>Advanced</strong> developer platform</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>100</strong> site collaborators</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Business Card -->
+                <div class="col">
+                    <div class="plan-card">
+                        <div class="recommended-badge">RECOMMENDED</div>
+                        <h2 class="plan-title">Business</h2>
+                        <p class="plan-subtitle">Grow your brand</p>
+                        <h3 class="price">$36<span>/mo</span></h3>
+
+                        <ul class="feature-list">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Free domain for 1 year</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>100 GB</strong> storage space</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Multi-cloud hosting</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>Standard</strong> marketing suite</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Accept payments</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>Standard</strong> eCommerce</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>10</strong> site collaborators</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Core Card -->
+                <div class="col">
+                    <div class="plan-card">
+                        <h2 class="plan-title">Core</h2>
+                        <p class="plan-subtitle">Engage your audience</p>
+                        <h3 class="price">$29<span>/mo</span></h3>
+
+                        <ul class="feature-list">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Free domain for 1 year</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>50 GB</strong> storage space</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Multi-cloud hosting</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>Basic</strong> marketing suite</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Accept payments</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>Basic</strong> eCommerce</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>5</strong> site collaborators</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Light Card -->
+                <div class="col">
+                    <div class="plan-card">
+                        <h2 class="plan-title">Light</h2>
+                        <p class="plan-subtitle">Get the basics</p>
+                        <h3 class="price">$17<span>/mo</span></h3>
+
+                        <ul class="feature-list">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Free domain for 1 year</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>2 GB</strong> storage space</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text">Multi-cloud hosting</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>Light</strong> marketing suite</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div class="feature-text"><strong>2</strong> site collaborators</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-5 justify-content-center d-flex align-content-center">
+                <div style="width: 500px;">
+                    <a href="#" class="btn compare-btn">Compare Plan Features</a>
+                    <p class="mt-5" style="color: #101585;">
+                        Prices do not include VAT, which is determined based on the user's billing country. The final
+                        price can be seen on the purchase page, before payment is completed. The Ad Vouchers are third
+                        party services and products and therefore are subject to the Terms of Use of such providers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="container p-5">
+            <!-- Header & Button -->
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-5">
+                <h1 class="display-5">Get a strong foundation<br>with every plan</h1>
+                <a href="#" class="btn btn-dark btn-lg rounded-pill mt-4 mt-md-0 p-3">Start for Free</a>
+            </div>
+
+            <!-- Feature Boxes -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 h-100" style="background-color: #d1f0b1;">
+                        <h5 class="mb-5">900+ templates</h5>
+                        <p class="mb-0">Choose a template that fits your industry and then customize every detail with
+                            the drag-and-drop editor.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 h-100" style="background-color: #d1f0b1;">
+                        <h5 class="mb-5">Built-in AI features</h5>
+                        <p class="mb-0">Get your tasks done faster with AI-powered tools for content, images, marketing
+                            and more.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 h-100" style="background-color: #d1f0b1;">
+                        <h5 class="mb-5">Powerful business tools</h5>
+                        <p class="mb-0">Run your business with powerful tools to help you manage a store, create a blog,
+                            set up payments and more.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 h-100" style="background-color: #d1f0b1;">
+                        <h5 class="mb-5">Domain registration</h5>
+                        <p class="mb-0">Find and register the perfect domain for your site and get one year free with
+                            select website plans.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 h-100" style="background-color: #d1f0b1;">
+                        <h5 class="mb-5">Reliable web hosting</h5>
+                        <p class="mb-0">Enjoy free web hosting with advanced security monitoring and 99.99% uptime for
+                            maximum reliability.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 h-100" style="background-color: #d1f0b1;">
+                        <h5 class="mb-5">Advanced marketing</h5>
+                        <p class="mb-0">Drive more traffic to your site and boost revenue with a complete suite of
+                            built-in marketing and SEO tools.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #f2f5f5;">
+        <div class="container p-5 ">
+            <div class="row align-items-center">
+                <!-- Left: Title & Button -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h1 class=" display-5 mb-4">Build your site in<br>5 simple steps</h1>
+                    <a href="#" class="btn btn-dark btn-lg rounded-pill px-4 py-2">Start for Free</a>
+                </div>
+
+                <!-- Right: Step List -->
+                <div class="col-md-6">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="border-bottom pb-3">
+                            <div class="d-flex">
+                                <span class="me-3 fw-semibold text-muted">01</span>
+                                <p class="mb-0"><strong>Choose a free template</strong> or use the AI website builder to
+                                    create a unique site that’s ready for business.</p>
+                            </div>
+                        </div>
+                        <div class="border-bottom pb-3">
+                            <div class="d-flex">
+                                <span class="me-3 fw-semibold text-muted">02</span>
+                                <p class="mb-0"><strong>Customize everything</strong> from the site layout to visuals
+                                    and content, using the drag-and-drop editor.</p>
+                            </div>
+                        </div>
+                        <div class="border-bottom pb-3">
+                            <div class="d-flex">
+                                <span class="me-3 fw-semibold text-muted">03</span>
+                                <p class="mb-0"><strong>Add business offerings</strong> like eCommerce, scheduling
+                                    solutions, a blog and more.</p>
+                            </div>
+                        </div>
+                        <div class="border-bottom pb-3">
+                            <div class="d-flex">
+                                <span class="me-3 fw-semibold text-muted">04</span>
+                                <p class="mb-0"><strong>Find and register the perfect domain</strong> or connect a
+                                    domain name you already own.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex">
+                                <span class="me-3 fw-semibold text-muted">05</span>
+                                <p class="mb-0"><strong>Start getting traffic</strong> and expand your reach with
+                                    built-in marketing and SEO tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-5" style="background-color: #004743;">
+        <!-- Bottom CTA Section -->
+        <div class="p-5">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div>
+                    <h2 class=" mb-3 mb-md-0" style="color: #e2d8ff">See what's possible</h2><br>
+                    <p style="color: #e2d8ff">Get inspired by incredible websites made with Wix.</p>
+                </div>
+                <a href="#" class="btn btn-light text-dark rounded-pill px-4 py-2"
+                    style="background-color: #e2d8ff">Explore Sites</a>
+            </div>
+        </div>
+        <!-- Grid untuk Desktop dan Tablet -->
+        <div class="row g-4 pb-5 d-none d-md-flex">
+            <div class="col-md-3 col-sm-6 col-12">
+                <img src="https://static.wixstatic.com/media/343a2a_fce5ca486d7b4d94bb8c6f2f1f68a20f~mv2.jpg/v1/fill/w_492,h_268,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%204721613.jpg"
+                    class="img-fluid rounded" alt="Image 1">
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <img src="https://static.wixstatic.com/media/343a2a_7356126e74e44e71b18111b84cfb9e7b~mv2.jpg/v1/crop/x_1,y_0,w_922,h_502/fill/w_491,h_268,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%204721626.jpg"
+                    class="img-fluid rounded" alt="Image 2">
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <img src="https://static.wixstatic.com/media/0784b1_36eab81d248543789add557934273439~mv2.png/v1/crop/x_177,y_47,w_1364,h_742/fill/w_492,h_268,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/59a70bf8b3ba48a67bda18a9334ce2a5_Expires%3D1734912000%26Key-Pair-Id%3DAPKAQ4GOSFWCVNEHN3O4%26Signa.png"
+                    class="img-fluid rounded" alt="Image 3">
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <img src="https://static.wixstatic.com/media/0784b1_80ebdf75e2f14ba2afbf6f91614c071e~mv2.jpg/v1/fill/w_491,h_268,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%204721589.jpg"
+                    class="img-fluid rounded" alt="Image 4">
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <img src="https://static.wixstatic.com/media/0784b1_72ee036420cc48a287c082a42933b4a4~mv2.jpg/v1/fill/w_491,h_268,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%204721627.jpg"
+                    class="img-fluid rounded" alt="Image 5">
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <img src="https://static.wixstatic.com/media/0784b1_77a919c9e2f94c21b568b0b6c9d36c7c~mv2.png/v1/crop/x_150,y_0,w_1606,h_873/fill/w_492,h_268,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/346f4fad59da78620cce649f0645f603_Expires%3D1734912000%26Key-Pair-Id%3DAPKAQ4GOSFWCVNEHN3O4%26Signa.png"
+                    class="img-fluid rounded" alt="Image 6">
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <img src="https://static.wixstatic.com/media/343a2a_945c629b3cd842728dc65b5c3bedaae2~mv2.jpg/v1/crop/x_2,y_0,w_922,h_501/fill/w_492,h_267,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%204721623.jpg"
+                    class="img-fluid rounded" alt="Image 7">
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <img src="https://static.wixstatic.com/media/0784b1_b6030d547e9c478eb7a0e5f5e57406b2~mv2.png/v1/fill/w_492,h_268,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/df19b5037dc414c92cfdef91549e7763_Expires%3D1734912000%26Key-Pair-Id%3DAPKAQ4GOSFWCVNEHN3O4%26Signa.png"
+                    class="img-fluid rounded" alt="Image 8">
+            </div>
+        </div>
+
+        <!-- Scroll Horizontal untuk Mobile -->
+        <div class="horizontal-scroll d-md-none pb-5">
+            <div class="d-flex flex-nowrap gap-3">
+                <img src="https://static.wixstatic.com/media/343a2a_fce5ca486d7b4d94bb8c6f2f1f68a20f~mv2.jpg/v1/fill/w_492,h_268,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%204721613.jpg"
+                    class="img-fluid rounded" style="min-width: 250px;" alt="Image 1">
+                <img src="https://static.wixstatic.com/media/343a2a_7356126e74e44e71b18111b84cfb9e7b~mv2.jpg/v1/crop/x_1,y_0,w_922,h_502/fill/w_491,h_268,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%204721626.jpg"
+                    class="img-fluid rounded" style="min-width: 250px;" alt="Image 2">
+                <img src="https://static.wixstatic.com/media/0784b1_36eab81d248543789add557934273439~mv2.png/v1/crop/x_177,y_47,w_1364,h_742/fill/w_492,h_268,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/59a70bf8b3ba48a67bda18a9334ce2a5_Expires%3D1734912000%26Key-Pair-Id%3DAPKAQ4GOSFWCVNEHN3O4%26Signa.png"
+                    class="img-fluid rounded" style="min-width: 250px;" alt="Image 3">
+                <img src="https://static.wixstatic.com/media/0784b1_80ebdf75e2f14ba2afbf6f91614c071e~mv2.jpg/v1/fill/w_491,h_268,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%204721589.jpg"
+                    class="img-fluid rounded" style="min-width: 250px;" alt="Image 4">
+
+            </div>
+        </div>
+
+        <!-- Scroll Horizontal untuk Mobile -->
+        <div class="horizontal-scroll d-md-none pb-5">
+            <div class="d-flex flex-nowrap gap-3">
+
+                <img src="https://static.wixstatic.com/media/0784b1_72ee036420cc48a287c082a42933b4a4~mv2.jpg/v1/fill/w_491,h_268,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%204721627.jpg"
+                    class="img-fluid rounded" style="min-width: 250px;" alt="Image 5">
+                <img src="https://static.wixstatic.com/media/0784b1_77a919c9e2f94c21b568b0b6c9d36c7c~mv2.png/v1/crop/x_150,y_0,w_1606,h_873/fill/w_492,h_268,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/346f4fad59da78620cce649f0645f603_Expires%3D1734912000%26Key-Pair-Id%3DAPKAQ4GOSFWCVNEHN3O4%26Signa.png"
+                    class="img-fluid rounded" style="min-width: 250px;" alt="Image 6">
+                <img src="https://static.wixstatic.com/media/343a2a_945c629b3cd842728dc65b5c3bedaae2~mv2.jpg/v1/crop/x_2,y_0,w_922,h_501/fill/w_492,h_267,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%204721623.jpg"
+                    class="img-fluid rounded" style="min-width: 250px;" alt="Image 7">
+                <img src="https://static.wixstatic.com/media/0784b1_b6030d547e9c478eb7a0e5f5e57406b2~mv2.png/v1/fill/w_492,h_268,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/df19b5037dc414c92cfdef91549e7763_Expires%3D1734912000%26Key-Pair-Id%3DAPKAQ4GOSFWCVNEHN3O4%26Signa.png"
+                    class="img-fluid rounded" style="min-width: 250px;" alt="Image 8">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section: We're here for you -->
+    <section class="container mt-5 p-5">
+        <div class="d-flex justify-content-between mb-5">
+            <h1 class="">We're here for you</h1>
+            <a href="#" class="btn btn-dark rounded-pill px-4 py-2 mt-3">Start for Free</a>
+        </div>
+        <div class="row text-start pt-5">
+            <div class="col-md-4 mb-4">
+                <h4 class=" pt-5 border-top border-dark">Get answers</h4>
+                <p class="text-muted">Watch tutorials and read detailed articles<br>in the Wix Help Center.</p>
+                <a href="#" class="text-decoration-underline ">Go to Help Center →</a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class=" pt-5 border-top border-dark">Contact us</h4>
+                <p class="text-muted">Ask questions over chat or schedule a call<br>with a Customer Care Expert.</p>
+                <a href="#" class="text-decoration-underline ">Get in Touch →</a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class=" pt-5 border-top border-dark">Hire a pro</h4>
+                <p class="text-muted">Get help at any stage—from site creation<br>to online growth.</p>
+                <a href="#" class="text-decoration-underline ">Find an Expert →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 pb-5" style="background-color: #e6eef7;">
+        <div class="container  p-5">
+            <h2 class="mb-5 ">Solutions for agencies<br>and enterprises</h2>
+            <div class="row g-4">
+                <button class="btn col-md-12">
+                    <div
+                        class="border border-dark btn-solution  rounded-4 p-5 d-flex justify-content-between align-items-center flex-wrap">
+                        <h4 class="">Agencies & freelancers</h4>
+                        <div class="mb-2 mb-md-0 text-start" style="width: 300px;">
+                            <p class="text-muted m-0">Experience the ultimate web creation platform for designers and
+                                developers.</p><br>
+                            <a href="#" class="text-decoration-underline fw-semibold">Explore Wix Studio →</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="btn col-md-12">
+                    <div
+                        class="border border-dark btn-solution  rounded-4 p-5 d-flex justify-content-between align-items-center flex-wrap">
+                        <h4 class="">Enterprises</h4>
+                        <div class="mb-2 mb-md-0 text-start" style="width: 300px;">
+                            <p class="text-muted m-0">Launch exceptional sites faster, streamline workflows and scale
+                                like no tomorrow.</p><br>
+                            <a href="#" class="text-decoration-underline fw-semibold">Explore Enterprise Solutions →</a>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5" style="background-color: #101585;">
+        <div class="text-center p-5">
+            <h1 style="color: #e6f0b1; font-size: 3rem">Create your site and scale with the right plan.</h1>
+            <br>
+            <a href="#" class="btn start-btn" style="background-color: #e4f0b1; color:black">Start for Free <i
+                    class="fas fa-arrow-right ms-1"></i></a>
+
+        </div>
+    </section>
+
+    <div class="container mt-5 p-5">
+        <h1>FAQ</h1>
+
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is Premium plan?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                        Creating your own website is free. With a Premium plan you can connect your own domain, remove
+                        Wix branding from your site, and more. Most Premium plans include a 1 year free domain voucher,
+                        which is only valid with a purchase of a new domain from Wix and cannot be used to renew or
+                        extend a domain you already own. For best value, we recommend our yearly or multi-year plans.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Can I try a Wix Premium plan for free?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                        Yes. Try any Wix Premium plan and if you decide it's not for you, you can cancel within 14 days
+                        and receive a full refund—no questions asked. This applies to the initial upgrade to a Premium
+                        plan.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How do I get my free domain?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                        Most yearly or multi-year Premium plans come with a 1 year free domain voucher. You can choose
+                        your own domain name with suffixes such as .com, .net, .org and more. Once you find the perfect
+                        domain for your site, your voucher will be waiting for you at checkout. This voucher is only
+                        included with the first time purchase of a Premium plan. It is not included when renewing a plan
+                        or upgrading an existing plan. The voucher is redeemable within 60 days following your purchase,
+                        and is only valid towards the purchase of a new domain from Wix. The free domain voucher cannot
+                        be used to renew an existing domain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Why do I need a custom domain?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingFour">
+                    <div class="accordion-body">
+                        A custom domain, like mystunningwebsite.com, is a great way to get found online and promote your
+                        brand. Replace your free Wix URL (username.wixsite.com/sitename) with a custom domain you
+                        purchased from Wix, or one you already own.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How can I get my own personalized email address?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingFive">
+                    <div class="accordion-body">
+                        Once you have your own domain, you can purchase a Google Workspace plan and get a custom email
+                        address using your domain, like info@mystunningwebsite.com. We've partnered with Google to give
+                        you 30GB of Drive storage, as well as Google Calendar, Docs, Sheets and Slides.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Where can I find my billing information?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingSix">
+                    <div class="accordion-body">
+                        Sign into your Wix account and choose Billing & Payments from the main menu at the top-right of
+                        the page. You'll see all your subscriptions and billing history right there.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        What online payments are accepted?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingSeven">
+                    <div class="accordion-body">
+                        Wix accepts all major credit cards and debit cards, including Visa, Mastercard, American
+                        Express, Discover, JCB and Diners. Additional payment options may be available in your specific
+                        location.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        How do I know if the Enterprise plan is right for my business?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingEight">
+                    <div class="accordion-body">
+                        Wix Enterprise gives leading businesses the power to create, launch and manage fully-customized
+                        sites and webpages at scale. We offer powerful solutions built for enterprise-level marketing,
+                        multi-site management for franchises and commerce. With the help of the Enterprise team, plans
+                        are tailored to match your business's exact needs. Every customer receives dedicated account
+                        management, prioritized support and direct access to product experts to help you drive success
+                        for every project.<br><br>
+                        Pricing varies based on project scope, required solutions and more. Book a call to find out
+                        more.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        How do I contact the Enterprise team?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingNine">
+                    <div class="accordion-body">
+                        Submit a call request and a member from the Enterprise team will reach out to you via phone or
+                        email to discuss your project. If you have a preference on how you want to be contacted, or the
+                        best day/time to contact you, please include this when you submit your request.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 10 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        How do you support builds for large-scale projects?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingTen">
+                    <div class="accordion-body">
+                        From complex websites to multi-site projects, the Enterprise team will support you every step of
+                        the way. In addition to your dedicated success manager and 24/7 priority support, our dedicated
+                        team of experts are champions of out-of-the box solutions, including project mapping, migration
+                        support, powerful site-building platforms, smart integrations, collaboration tools, marketing,
+                        SEO and more.<br><br>
+                        Request a call today to get started.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 11 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        How does Wix handle security assessments / questionnaires?
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingEleven">
+                    <div class="accordion-body">
+                        For more information on how Wix.com protects your data, compliance, certifications, GDPR and
+                        more, check out our white paper. For security questions specific to your business, contact the
+                        Enterprise team using the form above.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 12 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        Are there special programs for schools or universities?
+                    </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingTwelve">
+                    <div class="accordion-body">
+                        Yes, Wix Enterprise partners with schools, universities and colleges to offer a digital solution
+                        to match their scale and needs. If your institution is looking to deliver projects at any scale,
+                        then contact the Enterprise team and a member of our team will reach out to you with more
+                        information.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-container">
+        <div class="row">
+            <!-- Product Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Product</h5>
+                <ul>
+                    <li><a href="#">Website Templates</a></li>
+                    <li><a href="#">Website Builder</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Wix Features</a></li>
+                    <li><a href="#">App Market</a></li>
+                    <li><a href="#">Web Hosting</a></li>
+                    <li><a href="#">Domain Names</a></li>
+                    <li><a href="#">Website Accessibility</a></li>
+                    <li><a href="#">Mobile App Builder</a></li>
+                </ul>
+            </div>
+
+            <!-- Solutions Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Solutions</h5>
+                <ul>
+                    <li><a href="online-store.html">Online Store</a></li>
+                    <li><a href="online-booking.html">Online Booking</a></li>
+                    <li><a href="restaurant.html">Restaurant Website</a></li>
+                    <li><a href="blog.html">Blog Website</a></li>
+                    <li><a href="portfolio.html">Portfolio Website</a></li>
+                    <li><a href="ecommerce.html">eCommerce Website</a></li>
+                    <li><a href="#">Wix Studio</a></li>
+                    <li><a href="#">Enterprise Solutions</a></li>
+                    <li><a href="#">Student Website</a></li>
+                    <li><a href="#">Professional Tools</a></li>
+                    <li><a href="#">Logo Maker</a></li>
+                </ul>
+            </div>
+
+            <!-- Learn Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="#">Wix Blog</a></li>
+                    <li><a href="#">Privacy and Security Hub</a></li>
+                    <li><a href="#">SEO Learning Hub</a></li>
+                    <li><a href="#">Wix Encyclopedia</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Hire a Professional</a></li>
+                    <li><a href="#">Report Abuse</a></li>
+                    <li><a href="#">System Status</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">Press & Media</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Wix Capital</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                    <li><a href="#">Patent Notice</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- About Column -->
+            <div class="col-md-2">
+                <a class="navbar-brand" href="#">
+                    <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                        <g fill="#000" clip-path="url(#Logo_svg__a)">
+                            <path
+                                d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <p class="footer-description mt-4">
+                    The Wix website builder offers a complete solution from enterprise-grade infrastructure and business
+                    features to advanced SEO and marketing tools–enabling anyone to create and grow online.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom row">
+            <div class="col-md-6">
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end d-flex justify-content-md-end align-items-center">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <!-- Copyright -->
+                <div class="copyright ms-4">
+                    © 2006-2025 Wix.com, Inc
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>

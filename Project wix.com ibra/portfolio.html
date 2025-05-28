@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder - Create a Free Website In Minutes | Wix.com</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 500;
+        }
+
+        .hero-subtitle {
+            font-size: 3rem;
+            font-weight: 400;
+        }
+
+        .btn-black {
+            background-color: #000;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0.75rem 2rem;
+            border-radius: 2rem;
+        }
+
+        .btn-black:hover {
+            background-color: #000;
+            color: white;
+        }
+
+
+
+        .header-section {
+            padding: 2rem 0;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .description-text {
+            color: white;
+            line-height: 1.6;
+        }
+
+        .link-text {
+            color: white;
+            text-decoration: underline;
+        }
+
+
+        .category-tab {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
+
+        .category-tab.active {
+            font-weight: 600;
+        }
+
+        .category-tab.active::after {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            right: 1rem;
+            bottom: 0;
+            height: 2px;
+            background-color: white;
+        }
+
+        .template-card {
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            height: 400px;
+            background-color: white;
+        }
+
+        .template-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .template-link {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background-color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .template-link i {
+            color: #333;
+            font-size: 16px;
+        }
+
+        .explore-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            border-bottom: 1px solid white;
+            padding-bottom: 2px;
+        }
+
+        .explore-link i {
+            margin-left: 0.5rem;
+        }
+
+        /* Horizontal scroll for templates */
+        .template-scroll-container {
+            display: flex;
+            overflow-x: auto;
+            padding: 1rem 0;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            /* For Firefox */
+        }
+
+        .template-scroll-container::-webkit-scrollbar {
+            display: none;
+            /* For Chrome, Safari and Opera */
+        }
+
+        .template-scroll-item {
+            flex: 0 0 auto;
+            width: 450px;
+            margin-right: 1rem;
+        }
+
+        .template-scroll-item:last-child {
+            margin-right: 0;
+        }
+
+        .heading-container {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px 30px 20px;
+        }
+
+        .plan-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 50px 20px;
+        }
+
+        .plan-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .recommended-badge {
+            background-color: #ffb266;
+            color: black;
+        }
+
+        .plan-content {
+            padding: 20px;
+            color: black;
+            text-align: center;
+        }
+
+        .plan-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .plan-feature {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        .plan-feature span:first-child {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                    <g fill="#000" clip-path="url(#Logo_svg__a)">
+                        <path
+                            d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Product dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button">
+                            Product
+                        </a>
+                        <div class="mega-dropdown dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="row"> <!-- Baris utama untuk Creation dan Business -->
+                                            <!-- Kolom Creation -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">CREATION</div>
+                                                <div class="menu-item">
+                                                    <h4>Website design</h4>
+                                                    <p>Create your site with intuitive design features.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Website templates</h4>
+                                                    <p>Choose from 900+ website templates.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>AI website builder</h4>
+                                                    <p>Create your site in no time with AI.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom Business -->
+                                            <div class="col-4">
+                                                <div class="dropdown-header">BUSINESS</div>
+                                                <div class="menu-item">
+                                                    <h4>eCommerce</h4>
+                                                    <p>Run & grow your eCommerce website.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Scheduling</h4>
+                                                    <p>Manage appointments, staff & clients.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Restaurant</h4>
+                                                    <p>Manage your menus, orders, and reservations.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Kolom tambahan (Blog dll) -->
+                                            <div class="col-4">
+                                                <div class="menu-item">
+                                                    <h4>Blog</h4>
+                                                    <p>Share ideas & grow your traffic.</p>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <h4>Portfolio</h4>
+                                                    <p>Showcase your work with an online portfolio.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 sidebar">
+                                        <div class="dropdown-header">ESSENTIALS</div>
+                                        <div class="menu-item">
+                                            <h4>Domain names</h4>
+                                            <p>Buy & register a domain for your website.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Web hosting</h4>
+                                            <p>Get secure & reliable website hosting.</p>
+                                        </div>
+                                        <div class="menu-item">
+                                            <h4>Website security</h4>
+                                            <p>Get enterprise-grade security for your site.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Solutions dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button">
+                            Solutions
+                        </a>
+                    </li>
+
+                    <!-- Resources dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button">
+                            Resources
+                        </a>
+                    </li>
+
+                    <!-- Pricing -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                </ul>
+
+                <!-- Right side of navbar -->
+                <div class="d-flex align-items-center">
+                    <!-- Wixel -->
+                    <a class="nav-link me-3" href="#">Wixel</a>
+
+                    <!-- Wix Studio -->
+                    <a class="nav-link me-3" href="#">Wix Studio</a>
+
+                    <!-- Enterprise -->
+                    <a class="nav-link me-3" href="#">Enterprise</a>
+
+                    <!-- Globe icon -->
+                    <a class="nav-link me-3" href="#"><i class="fas fa-globe"></i></a>
+
+                    <!-- Log In -->
+                    <a class="nav-link me-3" href="login.html">Log In</a>
+
+                    <!-- Get Started button -->
+                    <button class="btn btn-get-started">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center mt-5 py-5">
+        <div class="container">
+            <h1 class="hero-title">Create a portfolio website<br> that stands out</h1>
+            <p class="fs-5 mb-5">Build your brand and attract clients with an online portfolio<br>stacked with design
+                features and AI capabilities.
+            </p>
+            <a href="#" class="btn btn-primary rounded-5">Get Started</a>
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-lg-4"><img
+                        src="https://static.wixstatic.com/media/a261d7_97e308f3c5274bc9b513be427a9c38a2~mv2.jpg/v1/fill/w_1610,h_1006,al_c,q_85,enc_avif,quality_auto/Frame%201000007936.jpg"
+                        alt="img" class="img-fluid rounded-3"></div>
+                <div class="col-lg-4"><img
+                        src="https://static.wixstatic.com/media/bb826b_1518e0a32330451aaec4870c4cf02a93~mv2.jpg/v1/fill/w_1200,h_748,fp_0.74_0.32,q_85,enc_avif,quality_auto/Hero%203.jpg"
+                        alt="img" class="img-fluid rounded-3"></div>
+                <div class="col-lg-4"><img
+                        src="https://static.wixstatic.com/media/bb826b_697ece2fc11e4e90b06abb5345b9aa80~mv2.jpg/v1/fill/w_1200,h_750,al_c,q_85,enc_avif,quality_auto/Hero%205.jpg"
+                        alt="img" class="img-fluid rounded-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"><img
+                        src="https://static.wixstatic.com/media/a261d7_66a20b07ba0c440897acbe0f2b7ec17f~mv2.jpg/v1/fill/w_1920,h_1200,fp_0.84_0.68,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/layout%20110.jpg"
+                        alt="img" class="img-fluid rounded-3"></div>
+                <div class="col-lg-4"><img
+                        src="https://static.wixstatic.com/media/a261d7_c7b5e3910e2349d886f12a2fc3de8f78~mv2.jpg/v1/fill/w_1603,h_1002,al_c,q_85,enc_avif,quality_auto/Glass%20With%20white%20stroke.jpg"
+                        alt="img" class="img-fluid rounded-3"></div>
+                <div class="col-lg-4"><img
+                        src="https://static.wixstatic.com/media/a261d7_8d592392075a45b68c9a7331f4901898~mv2.jpg/v1/fill/w_1603,h_1002,fp_0.25_0.26,q_85,enc_avif,quality_auto/hero3.jpg"
+                        alt="img" class="img-fluid rounded-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-start p-5" style="background-color: #e2efff; color:#015293">
+        <div class="container row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-5">Start with a fully<br>customizable template</h1>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#" class="text-decoration-none border-end border-dark pe-2"
+                        style="color: #015293;">Design</a>
+                    <a href="#" class="text-decoration-none border-end border-dark pe-2"
+                        style="color: #015293;">Photography</a>
+                    <a href="#" class="text-decoration-none border-end border-dark pe-2"
+                        style="color: #015293;">Architecture</a>
+                    <a href="#" class="text-decoration-none border-end border-dark pe-2"
+                        style="color: #015293;">Business</a>
+                    <a href="#" class="text-decoration-none border-end border-dark pe-2" style="color: #015293;">Art</a>
+                    <a href="#" class="text-decoration-none" style="color: #015293;">Fashion</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+
+                <p class="mb-4" style="color:#015293">Choose from hundreds of free portfolio templates, all expertly
+                    designed
+                    to
+                    get your work noticed.</p>
+                <div class="mb-4">
+                    <a href="#" class="btn btn-primary rounded-5" style="background-color: #015293;">Get Started</a>
+                    <a href="#" class="ms-3" style="color: #015293;">Explore templates →</a>
+                </div>
+            </div>
+            <img src="img/portfolio-1.png" alt="img" class="img-fluid my-5">
+        </div>
+    </section>
+
+    <section class="text-start p-5" style="background-color: #015293; color:#dff994">
+        <div class="container row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-5">
+                    Or chat with AI to build a unique site in minutes</h1>
+
+            </div>
+            <div class="col-lg-4">
+
+                <p class="mb-4" style="color:#dff994">
+                    Describe your vision and watch as our AI website builder creates your fully customizable portfolio
+                    site.</p>
+                <div class="mb-4">
+                    <a href="#" class="btn btn-primary text-dark rounded-5" style="background-color: #dff994;">Get
+                        Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold">Build your portfolio, your way</h2>
+                    <div class="accordion mt-4" id="portfolioAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true">
+                                    Set up your portfolio with AI
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    Upload all of your work and use AI to automatically categorize everything into
+                                    titled projects with matching descriptions.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    Choose your layout
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Pick one of our designer-made layouts and switch between them anytime to showcase
+                                    your work exactly the way you want.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree">
+                                    Customize everything
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Add or edit pages, texts, visuals and more, then distinguish your site further with
+                                    no-code motion effects and animations.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour">
+                                    Run it all from one place
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+
+                                    Manage your projects, media, contacts and more all from a centralized dashboard,
+                                    ensuring a quicker and more efficient workflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="template-image mt-4 mt-md-0">
+                        <img src="https://static.wixstatic.com/media/a261d7_44983de6cd7244e5a7de3d6c8db26f26f000.jpg/v1/fill/w_1023,h_666,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/a261d7_44983de6cd7244e5a7de3d6c8db26f26f000.jpg"
+                            alt="AI Portfolio" class="img-fluid rounded-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-start p-5" style="background-color: #014051;">
+        <div class="container row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-5 text-light">
+
+                    Reach more people, <br>
+                    land more clients</h1>
+
+            </div>
+            <div class="col-lg-4">
+
+                <div class="mb-4 text-end">
+                    <a href="#" class="btn btn-light text-dark rounded-5">Get
+                        Started</a>
+                </div>
+            </div>
+            <img src="img/portfolio-2.png" alt="img" class="img-fluid">
+            <img src="img/portfolio-3.png" alt="img" class="img-fluid">
+            <img src="img/portfolio-4.png" alt="img" class="img-fluid">
+        </div>
+    </section>
+
+    <section class="p-5" style="background-color:#e2d8ff;">
+        <div class="container text-center p-5" style="color: #015293;">
+            <h1 class=" mb-4">
+                Look more professional with a custom domain name</h1>
+            <div class="d-flex justify-content-center align-items-center mb-3 flex-wrap">
+                <div class="input-group rounded-pill overflow-hidden" style="max-width: 700px;">
+                    <input type="text" class="form-control border-0 px-4 py-3" placeholder="e.g. haileyfashion">
+                    <button class="btn btn-dark rounded-5 px-4" type="button" style="background-color: #015293;">Search
+                        →</button>
+                </div>
+            </div>
+            <p>Enjoy a free domain name for one year with select website plans.</p>
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container text-center">
+            <!-- Heading & description -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-start">
+                    <h2 class="display-5">Generate additional<br>income</h2>
+                </div>
+                <div class="col-lg-4 text-start">
+                    <p class="text-muted mt-3">
+                        Add business functionality as you go to earn new streams of revenue.
+                    </p>
+                    <a href="#" class="btn btn-dark btn-lg rounded-pill mt-2">Get Started</a>
+                </div>
+            </div>
+
+            <!-- 3 Columns Feature Cards -->
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div style="background-color: #863a29;"
+                        class="pointer-event rounded-4 h-100 p-5 text-start text-light">
+                        <h4>Sell your work </h4>
+                        <p class=" my-3">Add an online store to sell your digital and physical products, or sell
+                            print-on-demand merchandise branded with your designs.</p>
+                        <img src="https://static.wixstatic.com/media/0784b1_d04feb31f05d4993ab73f35b8f4c704f~mv2.jpg/v1/fill/w_329,h_335,al_c,q_80,enc_avif,quality_auto/Income%201.jpg"
+                            alt="img" class="img-fluid rounded-5 p-3">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="background-color: #d0f0b4;"
+                        class="pointer-event rounded-4 h-100 p-5 text-start text-dark">
+                        <h4>Offer services</h4>
+                        <p class=" my-3">Provide services with a full scheduling solution that allows you to instantly
+                            accept bookings and receive payments from your clients.</p>
+                        <img src="https://static.wixstatic.com/media/a261d7_9de7627f21ef489eb117042c37d64648~mv2.jpg/v1/fill/w_329,h_335,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%201000008413%20(1).jpg"
+                            alt="img" class="img-fluid rounded-5 p-3">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="background-color: #aebcff;"
+                        class="pointer-event rounded-4 h-100 p-5 text-start text-dark">
+                        <h4>Start a blog </h4>
+                        <p class=" my-3">Grow your community and drive traffic to your site, or monetize it by offering
+                            paid subscriptions to access your content.</p>
+                        <img src="https://static.wixstatic.com/media/a261d7_2f11d4ab58bc4187a98e5b015fdc06a1~mv2.jpg/v1/fill/w_329,h_335,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%201000008415.jpg"
+                            alt="img" class="img-fluid rounded-5 p-3">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Left Text -->
+                <div class="col-lg-6 text-start px-5">
+                    <h1 class="display-4">How to make a<br>portfolio website</h1>
+                    <div class="mt-4 d-flex gap-3">
+                        <a href="#" class="btn btn-dark btn-sm rounded-pill px-4 py-2">Get Started</a>
+                        <a href="#" class="text-dark fw-light">
+                            Learn more &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Steps -->
+                <div class="col-lg-6 px-5">
+                    <ol class="list-unstyled">
+                        <li class="mb-4 border-bottom border-dark pb-3 d-flex">
+                            <span class="me-3">1.</span>
+                            <span>Choose from a wide selection of templates or start with AI.</span>
+                        </li>
+                        <li class="mb-4 border-bottom border-dark pb-3 d-flex">
+                            <span class="me-3">2.</span>
+                            <span>Upload images of your work and organize them into projects.</span>
+                        </li>
+                        <li class="mb-4 border-bottom border-dark pb-3 d-flex">
+                            <span class="me-3">3.</span>
+                            <span>Customize your site to perfection with zero code needed.</span>
+                        </li>
+                        <li class="mb-4 border-bottom border-dark pb-3 d-flex">
+                            <span class="me-3">4.</span>
+                            <span>Select a domain name, connect and publish.</span>
+                        </li>
+                        <li class="mb-4 d-flex">
+                            <span class="me-3">5.</span>
+                            <span>Promote your online portfolio with a suite of in-house marketing tools.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="p-5" style="background-color:#015293 ;">
+        <div class="container text-center p-5" style="color: #e2d8ff;">
+            <h1 class=" mb-4">
+                Thriving with Wix</h1>
+
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <!-- Heading & description -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-start">
+                    <h2 class="display-5">Read. Learn. Get inspired.</h2>
+                </div>
+                <div class="col-lg-4 text-end">
+
+                    <a href="#" class="btn btn-dark btn-sm rounded-pill mt-2">Explore the Blog</a>
+                </div>
+            </div>
+
+            <img src="img/card-portfolio.png" alt="img" class="img-fluid">
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <section style="background-color: #014051;">
+        <div class="container text-light p-5">
+            <h2 class="mb-5 ">We’re here for you 24/7</h2>
+            <div class="row g-4">
+
+                <button class="btn col-md-12">
+                    <div
+                        class="border border-light btn-portfolio  rounded-5 p-5 d-flex justify-content-between align-items-center flex-wrap">
+                        <h4 class=" text-light">Get answers</h4>
+                        <div class="mb-2 mb-md-0 text-start" style="width: 300px;">
+                            <p class="text-light m-0">Watch tutorials and read detailed articles in the Wix Help Center.
+                            </p>
+                        </div>
+                        <div><i class="fas fa-arrow-right text-light"></i></div>
+                    </div>
+                </button>
+                <button class="btn col-md-12">
+                    <div
+                        class="border border-light btn-portfolio  rounded-5 p-5 d-flex justify-content-between align-items-center flex-wrap">
+                        <h4 class=" text-light">Contact us</h4>
+                        <div class="mb-2 mb-md-0 text-start" style="width: 300px;">
+                            <p class="text-light m-0">Get support by chat or schedule a call with a Customer Care
+                                Expert.</p>
+                        </div>
+                        <div><i class="fas fa-arrow-right text-light"></i></div>
+
+                    </div>
+                </button>
+                <button class="btn col-md-12">
+                    <div
+                        class="border border-light btn-portfolio  rounded-5 p-5 d-flex justify-content-between align-items-center flex-wrap">
+                        <h4 class=" text-light">Hire a pro</h4>
+                        <div class="mb-2 mb-md-0 text-start" style="width: 300px;">
+                            <p class="text-light m-0">Get help at any stage—from site creation to online growth.
+                            </p>
+                        </div>
+                        <div><i class="fas fa-arrow-right text-light"></i></div>
+
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5">
+        <div class="container">
+
+            <h1>
+                Portfolio Website FAQ</h1>
+
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is a portfolio website?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Why make an online portfolio?
+
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What kind of portfolios can I build on Wix?
+
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What makes a good online portfolio?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingFour">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Is it free to make a portfolio website?
+
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingFive">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Does my free portfolio website come with hosting?
+
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingSix">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        How can I make sure my site looks good on mobile devices?
+
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingSeven">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        How can I optimize my site for SEO?
+
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingEight">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        How can I design a free logo for my portfolio website?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse col-lg-6" aria-labelledby="headingNine">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="p-5" style="background-color:#d0f0b4">
+        <div class="text-center p-5">
+            <h1 style="color:#014051; font-size: 3rem">Capture the attention your work deserves.</h1>
+            <br>
+            <a href="#" class="btn start-btn" style="background-color:#014051; color:white">Create Your Portfolio <i
+                    class="fas fa-arrow-right ms-1"></i></a>
+
+        </div>
+    </section>
+
+    <div class="footer-container">
+        <div class="row">
+            <!-- Product Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Product</h5>
+                <ul>
+                    <li><a href="#">Website Templates</a></li>
+                    <li><a href="#">Website Builder</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Wix Features</a></li>
+                    <li><a href="#">App Market</a></li>
+                    <li><a href="#">Web Hosting</a></li>
+                    <li><a href="#">Domain Names</a></li>
+                    <li><a href="#">Website Accessibility</a></li>
+                    <li><a href="#">Mobile App Builder</a></li>
+                </ul>
+            </div>
+
+            <!-- Solutions Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Solutions</h5>
+                <ul>
+                    <li><a href="online-store.html">Online Store</a></li>
+                    <li><a href="online-booking.html">Online Booking</a></li>
+                    <li><a href="restaurant.html">Restaurant Website</a></li>
+                    <li><a href="blog.html">Blog Website</a></li>
+                    <li><a href="portfolio.html">Portfolio Website</a></li>
+                    <li><a href="ecommerce.html">eCommerce Website</a></li>
+                    <li><a href="#">Wix Studio</a></li>
+                    <li><a href="#">Enterprise Solutions</a></li>
+                    <li><a href="#">Student Website</a></li>
+                    <li><a href="#">Professional Tools</a></li>
+                    <li><a href="#">Logo Maker</a></li>
+                </ul>
+            </div>
+
+            <!-- Learn Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="#">Wix Blog</a></li>
+                    <li><a href="#">Privacy and Security Hub</a></li>
+                    <li><a href="#">SEO Learning Hub</a></li>
+                    <li><a href="#">Wix Encyclopedia</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Hire a Professional</a></li>
+                    <li><a href="#">Report Abuse</a></li>
+                    <li><a href="#">System Status</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div class="col-md-2 footer-menu">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">Press & Media</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Wix Capital</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                    <li><a href="#">Patent Notice</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- About Column -->
+            <div class="col-md-2">
+                <a class="navbar-brand" href="#">
+                    <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="none">
+                        <g fill="#000" clip-path="url(#Logo_svg__a)">
+                            <path
+                                d="M75 0h-4.142c-1.15 0-2.224.57-2.87 1.52l-5.54 8.174a.372.372 0 0 1-.615 0l-5.54-8.173A3.46 3.46 0 0 0 53.424 0h-4.143l9.87 14.56-9.815 14.477h4.143c1.149 0 2.223-.569 2.868-1.52l5.486-8.093a.372.372 0 0 1 .616 0l5.485 8.093a3.46 3.46 0 0 0 2.87 1.52h4.142L65.131 14.56zM40.758 2.97v26.067h1.98a2.97 2.97 0 0 0 2.97-2.97V0h-1.98a2.97 2.97 0 0 0-2.97 2.97M37.126 0h-1.762a4.15 4.15 0 0 0-4.051 3.233l-3.942 17.328-3.45-16.175c-.638-2.99-3.706-5.006-6.845-4.139-1.999.552-3.481 2.241-3.914 4.27L9.747 20.54 5.813 3.234A4.16 4.16 0 0 0 1.76 0H0l6.604 29.036h2.502a4.81 4.81 0 0 0 4.706-3.808l4.221-19.81a.54.54 0 0 1 .523-.424c.25 0 .471.178.523.423l4.226 19.812a4.81 4.81 0 0 0 4.706 3.807h2.51z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <p class="footer-description mt-4">
+                    The Wix website builder offers a complete solution from enterprise-grade infrastructure and business
+                    features to advanced SEO and marketing tools–enabling anyone to create and grow online.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom row">
+            <div class="col-md-6">
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end d-flex justify-content-md-end align-items-center">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <!-- Copyright -->
+                <div class="copyright ms-4">
+                    © 2006-2025 Wix.com, Inc
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>
