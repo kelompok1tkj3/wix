@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Wix Newsroom</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+   @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-black">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 border-b border-gray-200">
+    <div class="font-extrabold text-2xl leading-none">WIX</div>
+    <nav class="hidden sm:flex space-x-8 text-sm font-normal">
+      <a class="hover:underline" href="#">About us</a>
+      <a class="hover:underline" href="#">Newsroom</a>
+      <a class="hover:underline" href="#">Investor Relations</a>
+      <a class="hover:underline" href="#">Wix Capital</a>
+      <a class="hover:underline" href="#">Careers</a>
+    </nav>
+    <button aria-label="Menu" class="sm:hidden text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+  
+  <style>
+   /* Circle with arrow inside pointing right */
+   .arrow-circle {
+     width: 32px;
+     height: 32px;
+     border: 1px solid #6b7280; /* gray-500 */
+     border-radius: 9999px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #6b7280;
+     transition: background-color 0.3s ease, color 0.3s ease;
+   }
+   .arrow-circle:hover {
+     background-color: #f3f4f6; /* gray-100 */
+     color: #111827; /* gray-900 */
+     border-color: #111827;
+   }
+   .arrow-circle svg {
+     width: 14px;
+     height: 14px;
+     stroke: currentColor;
+     stroke-width: 2;
+     stroke-linecap: round;
+     stroke-linejoin: round;
+     fill: none;
+   }
+   .body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+
+  <!-- Main Content -->
+  <main class="px-6 py-10 max-w-7xl mx-auto space-y-12">
+    <!-- Hero Section -->
+    <section>
+      <h1 class="text-4xl font-normal mb-4">Newsroom</h1>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <button class="text-xs border border-gray-400 rounded px-2 py-1 font-normal">Press Releases</button>
+        <button class="text-xs border border-gray-400 rounded px-2 py-1 font-normal">In the News</button>
+        <button class="text-xs border border-gray-400 rounded px-2 py-1 font-normal">Company Updates</button>
+      </div>
+      <div class="bg-[#0a4f4a] rounded-md p-6 mb-6">
+        <img src="https://storage.googleapis.com/a1aa/image/169305df-910f-4e8f-9c71-3dc02833b7e0.jpg" alt="News banner" class="w-full h-auto rounded" />
+      </div>
+      <button class="text-xs border border-gray-400 rounded px-2 py-1 font-normal mb-3">Press Releases</button>
+      <h2 class="text-2xl font-normal max-w-3xl leading-snug">
+        Wix Introduces Adaptive Content Feature with AI to Personalize Web Experiences for Site Visitors
+      </h2>
+      <div class="flex justify-between items-center max-w-3xl mt-6 text-xs text-gray-600 font-normal">
+        <span>Apr 23 2025</span>
+        <i class="fas fa-arrow-up-right"></i>
+      </div>
+    </section>
+
+    <!-- News Cards -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Card 1 -->
+      <article class="flex flex-col">
+        <img src="https://storage.googleapis.com/a1aa/image/0eeb4c5d-3d44-430b-5a4c-6e2cf4e14e4e.jpg" alt="Japanese font" class="w-full object-cover rounded" />
+        <span class="mt-4 mb-2 px-3 py-1 border border-gray-600 rounded text-[13px] text-gray-800 max-w-max">Press Release</span>
+        <h2 class="text-lg leading-snug font-normal max-w-md">
+          Wix and Morisawa Partner to Expand Japanese Font Library for Designers and Creators
+        </h2>
+        <div class="mt-4 flex items-center justify-between max-w-xs">
+          <time class="text-sm text-gray-700">Apr 22 2025</time>
+          <a aria-label="Read more" class="text-gray-700 border border-gray-700 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-100" href="#">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <line x1="5" x2="19" y1="12" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="flex flex-col">
+        <img src="https://storage.googleapis.com/a1aa/image/756bf23a-1b02-4c17-a321-48c71abf5c11.jpg" alt="Wix Studio with Rive" class="w-full object-cover rounded" />
+        <span class="mt-4 mb-2 px-3 py-1 border border-gray-600 rounded text-[13px] text-gray-800 max-w-max">Company Update</span>
+        <h2 class="text-lg leading-snug font-normal max-w-md">
+          Wix Studio Integrates with Rive to Empower Designers with High-Quality, Interactive Graphics and Animations
+        </h2>
+        <div class="mt-4 flex items-center justify-between max-w-xs">
+          <time class="text-sm text-gray-700">Jan 15 2025</time>
+          <a aria-label="Read more" class="text-gray-700 border border-gray-700 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-100" href="#">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <line x1="5" x2="19" y1="12" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Astro Launch Section -->
+    <section class="pt-10">
+      <div class="bg-[#004D47] rounded-md max-w-5xl mx-auto p-6 md:p-10 space-y-8 text-white">
+        <h2 class="text-xl md:text-2xl font-semibold">WIX</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Chat Box -->
+          <div class="bg-white text-black rounded-lg shadow-md p-4 md:p-6 text-sm">
+            <div class="flex justify-between items-center mb-3 text-gray-700 font-semibold">
+              <div>ASTRO</div>
+              <button aria-label="Close chat" class="text-gray-400 hover:text-gray-600">×</button>
+            </div>
+            <div class="space-y-3">
+              <div class="bg-[#D9E6FF] text-[#2F4F9B] rounded-full px-2 py-0.5 text-xs font-medium max-w-max">
+                I want to give Jo permissions to update services
+              </div>
+              <p class="text-gray-700 text-xs">
+                What specific tasks or permissions would you like Jo to have on the site?
+              </p>
+              <div class="bg-[#D9E6FF] text-[#2F4F9B] rounded-full px-2 py-0.5 text-xs font-medium max-w-max">
+                manage services and bookings
+              </div>
+              <p class="text-gray-700 text-xs">
+                Based on the permissions you specified, I recommend assigning Jo the
+                <strong>Back Office Manager</strong> role.
+              </p>
+              <div class="bg-[#D9E6FF] text-[#2F4F9B] rounded-full px-2 py-0.5 text-xs font-medium max-w-max">
+                yes please
+              </div>
+              <p class="text-gray-700 text-xs">Please select the role you'd like to assign to Jo.</p>
+              <div class="flex items-center justify-between text-sm">
+                <span>Back Office Manager</span>
+                <button class="bg-[#0057FF] text-white rounded-full px-3 py-1 font-semibold hover:bg-[#0046d1]">
+                  Select
+                </button>
+              </div>
+              <div class="w-full h-1 bg-gray-200 rounded-full mt-2">
+                <div class="w-1/4 h-1 bg-[#0057FF] rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- User Info Card -->
+          <div class="bg-white text-black rounded-lg shadow-md p-4 md:p-6">
+            <img src="https://storage.googleapis.com/a1aa/image/ab6eca39-1909-4b43-c243-39bef10faa2f.jpg" alt="Jo Johnson" class="rounded-md mb-4 object-cover w-full h-[240px]" />
+            <h3 class="text-lg md:text-xl font-semibold mb-1">Jo Johnson</h3>
+            <div class="border border-[#A7C4B5] text-[#4B6B5B] text-xs font-semibold rounded px-2 py-0.5 mb-4 select-none">
+              BOOKING PERMISSIONS
+            </div>
+            <div class="space-y-2 text-gray-700 text-xs">
+              <div class="flex items-center gap-2"><i class="far fa-envelope"></i><span>jojo1000@gmail.com</span></div>
+              <div class="flex items-center gap-2"><i class="fas fa-mobile-alt"></i><span>123-456-789</span></div>
+              <div class="flex items-center gap-2"><i class="fas fa-map-marker-alt"></i><span>New York, USA</span></div>
+              <div class="flex items-center gap-2"><i class="far fa-clock"></i><span>11:00 AM - 5:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-xl md:text-2xl font-normal mt-6">Wix Launches Astro, an AI-powered Assistant for Site and Business Management</h2>
+        <p class="text-sm text-gray-300">Apr 9 2025</p>
+        <div class="flex justify-end mt-2">
+          <button aria-label="Open link" class="text-white hover:text-gray-300 text-lg">
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+ <body class="bg-white font-sans text-gray-900">
+  <main class="max-w-7xl mx-auto px-4 py-8">
+   <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+    <article class="border border-gray-200 rounded-md overflow-hidden">
+     <img alt="Wix Functions flow diagram with orange background showing cart and checkout data and order summary" class="w-full object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a3e54627-a6bc-425f-16fd-84db67661de8.jpg" width="600"/>
+    </article>
+    <article class="border border-gray-200 rounded-md overflow-hidden">
+     <img alt="Wix Automation Builder flow diagram with blue background showing new order placed and coupon email" class="w-full object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b6947349-b141-4327-2c9d-4b541a9e7c96.jpg" width="600"/>
+    </article>
+   </section>
+   <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <article class="flex flex-col justify-between border-b border-gray-300 pb-6">
+     <button class="self-start mb-3 px-3 py-1 border border-gray-400 rounded text-sm text-gray-900 hover:bg-gray-100" type="button">
+      Press Release
+     </button>
+     <h2 class="text-lg leading-snug font-normal mb-4">
+      Wix Launches Wix Functions to Customize Business Logic Without Code
+     </h2>
+     <div class="flex items-center justify-between text-gray-700 text-sm">
+      <time datetime="2025-03-19">
+       Mar 19 2025
+      </time>
+      <a aria-label="Read more about Wix Launches Wix Functions to Customize Business Logic Without Code" class="arrow-circle" href="#">
+       <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+        <line x1="5" x2="19" y1="12" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+       </svg>
+      </a>
+     </div>
+    </article>
+    <article class="flex flex-col justify-between border-b border-gray-300 pb-6">
+     <button class="self-start mb-3 px-3 py-1 border border-gray-400 rounded text-sm text-gray-900 hover:bg-gray-100" type="button">
+      Press Release
+     </button>
+     <h2 class="text-lg leading-snug font-normal mb-4">
+      Wix Launches New Automation Builder to Power Advanced Business Workflows
+     </h2>
+     <div class="flex items-center justify-between text-gray-700 text-sm">
+      <time datetime="2025-03-12">
+       Mar 12 2025
+      </time>
+      <a aria-label="Read more about Wix Launches New Automation Builder to Power Advanced Business Workflows" class="arrow-circle" href="#">
+       <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+       <line x1="5" x2="19" y1="12" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+       </svg>
+      </a>
+     </div>
+    </article>
+   </section>
+  </main>
+ </body>
+
+<body class="bg-white text-black px-4 sm:px-6 md:px-10 lg:px-20 py-8">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center space-x-2 mb-6">
+      <div class="w-2 h-2 bg-black"></div>
+      <p class="text-xs font-normal uppercase tracking-wide">In the News</p>
+    </div>
+
+    <div class="divide-y divide-gray-200">
+
+      <!-- Article 1 -->
+      <article class="py-6">
+        <h2 class="text-xl font-normal leading-snug max-w-3xl">
+          Wix And ActiveCampaign Collaborate To Boost Engagement And Marketing Automation
+        </h2>
+        <div class="flex justify-between items-center mt-3 max-w-3xl">
+          <button class="text-[10px] font-normal border border-gray-300 rounded px-2 py-[2px] leading-none">
+            In the News
+          </button>
+          <a href="#" class="text-xs font-normal uppercase tracking-wide text-black flex items-center space-x-1">
+            <span>BENZINGA</span>
+            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="py-6">
+        <h2 class="text-xl font-normal leading-snug max-w-3xl">
+          Wix Announces Adaptive Content For Driving Higher Sales & Engagement
+        </h2>
+        <div class="flex justify-between items-center mt-3 max-w-3xl">
+          <button class="text-[10px] font-normal border border-gray-300 rounded px-2 py-[2px] leading-none">
+            In the News
+          </button>
+          <a href="#" class="text-xs font-normal uppercase tracking-wide text-black flex items-center space-x-1">
+            <span>SEARCH ENGINE JOURNAL</span>
+            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="py-6">
+        <h2 class="text-xl font-normal leading-snug max-w-3xl">
+          Astro is Wix's new AI tool, and it's going to change the way you work
+        </h2>
+        <div class="flex justify-between items-center mt-3 max-w-3xl">
+          <button class="text-[10px] font-normal border border-gray-300 rounded px-2 py-[2px] leading-none">
+            In the News
+          </button>
+          <a href="#" class="text-xs font-normal uppercase tracking-wide text-black flex items-center space-x-1">
+            <span>CREATIVE BLOQ</span>
+            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="py-6">
+        <h2 class="text-xl font-normal leading-snug max-w-3xl">
+          Why eCommerce Hosting Providers Should Pay Attention to Wix’s AI-Powered Astro
+        </h2>
+        <div class="flex justify-between items-center mt-3 max-w-3xl">
+          <button class="text-[10px] font-normal border border-gray-300 rounded px-2 py-[2px] leading-none">
+            In the News
+          </button>
+          <a href="#" class="text-xs font-normal uppercase tracking-wide text-black flex items-center space-x-1">
+            <span>HOSTINGADVICE</span>
+            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="py-6">
+        <h2 class="text-xl font-normal leading-snug max-w-3xl">
+          Q&A with Wix’s Jill Sherman: New Integration Lets Users Sell Custom, On-Demand Prints With No Inventory
+        </h2>
+        <div class="flex justify-between items-center mt-3 max-w-3xl">
+          <button class="text-[10px] font-normal border border-gray-300 rounded px-2 py-[2px] leading-none">
+            In the News
+          </button>
+          <a href="#" class="text-xs font-normal uppercase tracking-wide text-black flex items-center space-x-1">
+            <span>HOSTING ADVICE</span>
+            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="py-6">
+        <h2 class="text-xl font-normal leading-snug max-w-3xl">
+          Innovation Conference: Mark Tluszcz Chairman of Wix & K Health and CEO of Mangrove Capital Partners
+        </h2>
+        <div class="flex justify-between items-center mt-3 max-w-3xl">
+          <button class="text-[10px] font-normal border border-gray-300 rounded px-2 py-[2px] leading-none">
+            In the News
+          </button>
+          <a href="#" class="text-xs font-normal uppercase tracking-wide text-black flex items-center space-x-1">
+            <span>THE BOARDROOM CLUB</span>
+            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</body>
+
+ <body class="bg-white text-black">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+   <div class="flex items-center space-x-2 mb-6">
+    <div class="w-3 h-3 bg-black">
+    </div>
+    <p class="text-xs font-normal">
+     SPOTLIGHT
+    </p>
+   </div>
+   <hr class="border-t border-gray-200 mb-6"/>
+   <img alt="Curved scrolling webpage with orange sofa and blue chair on screen and green and white blocks behind" class="w-full object-cover mb-4 rounded-sm" height="450" src="https://storage.googleapis.com/a1aa/image/7545c588-4bde-4e31-2c12-36072ee207c4.jpg" width="900"/>
+   <button class="text-xs border border-gray-400 rounded px-3 py-1 mb-4 hover:bg-gray-100 transition" type="button">
+    Company Updates
+   </button>
+   <h1 class="text-2xl font-normal leading-tight mb-4 max-w-3xl">
+    What’s on the Horizon for 2025?: We Asked Wix Experts
+   </h1>
+   <div class="flex items-center justify-between max-w-3xl">
+    <p class="text-xs font-normal text-gray-700">
+     Dec 19 2024
+    </p>
+   </div>
+  </div>
+ </body>
+
+<main class="bg-black text-white px-6 py-10 sm:px-10 md:px-20 lg:px-32 font-inter">
+  <!-- Section: Contact -->
+  <section class="mb-20">
+    <div class="flex items-center space-x-2 mb-6">
+      <div class="w-3 h-3 bg-white"></div>
+      <p class="uppercase text-xs font-semibold tracking-widest">Contact</p>
+    </div>
+    <h1 class="text-white text-[3.5rem] leading-[3.8rem] max-w-4xl font-light mb-12 sm:text-[4rem] sm:leading-[4.2rem]">
+      For any press related inquiries, please write us at
+      <a href="mailto:pr@wix.com" class="underline font-normal">pr@wix.com</a>
+    </h1>
+    <p class="text-sm max-w-xs leading-5 font-light">
+      For non-press-related inquiries,<br />
+      please use our general
+      <a href="#" class="underline font-normal">contact page</a>.
+    </p>
+  </section>
+
+  <hr class="border-t border-gray-700 mb-20" />
+
+  <!-- Section: Social -->
+  <section>
+    <div class="flex items-center space-x-2 mb-6">
+      <div class="w-3 h-3 bg-white"></div>
+      <p class="uppercase text-xs font-semibold tracking-widest">Social</p>
+    </div>
+
+    <!-- Social: Wix -->
+    <div class="mb-10 max-w-xs">
+      <p class="mb-6 font-light text-base">Wix</p>
+      <div class="flex space-x-6 text-white text-lg">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f hover:text-gray-400 transition"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram hover:text-gray-400 transition"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in hover:text-gray-400 transition"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok hover:text-gray-400 transition"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter hover:text-gray-400 transition"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube hover:text-gray-400 transition"></i></a>
+      </div>
+    </div>
+
+    <!-- Social: Wix Studio -->
+    <div class="max-w-xs">
+      <p class="mb-6 font-light text-base">Wix Studio</p>
+      <div class="flex space-x-6 text-white text-lg">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f hover:text-gray-400 transition"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram hover:text-gray-400 transition"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in hover:text-gray-400 transition"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok hover:text-gray-400 transition"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter hover:text-gray-400 transition"></i></a>
+      </div>
+    </div>
+  </section>
+  </main>
+</body>
+
+<body class="bg-white text-black">
+  <div class="max-w-7xl mx-auto px-6 py-10">
+    <h1 class="font-extrabold text-2xl mb-4">WIX</h1>
+    <p class="text-sm max-w-xl mb-8 leading-relaxed">
+      The Wix website builder offers a complete solution from enterprise-grade
+      infrastructure and business features to advanced SEO and marketing
+      tools–enabling anyone to create and grow online.
+    </p>
+    <div class="mb-6 text-sm">
+      <p class="mb-1">About</p>
+      <p>Contact Us</p>
+    </div>
+    <div class="flex space-x-4 mb-12 text-base">
+      <a href="#" aria-label="Facebook" class="hover:text-gray-700">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" aria-label="YouTube" class="hover:text-gray-700">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="#" aria-label="Instagram" class="hover:text-gray-700">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" aria-label="TikTok" class="hover:text-gray-700">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="#" aria-label="Pinterest" class="hover:text-gray-700">
+        <i class="fab fa-pinterest-p"></i>
+      </a>
+      <a href="#" aria-label="X" class="hover:text-gray-700">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+      <a href="#" aria-label="LinkedIn" class="hover:text-gray-700">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-8 gap-x-12 text-sm max-w-5xl">
+      <div>
+        <h2 class="font-semibold mb-3">Product</h2>
+        <ul class="space-y-2">
+          <li>Website Templates</li>
+          <li>Website Builder</li>
+          <li>Website Design</li>
+          <li>Wix Features</li>
+          <li>App Market</li>
+          <li>Web Hosting</li>
+          <li>Domain Names</li>
+          <li>Website Accessibility</li>
+          <li>Mobile App Builder</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold mb-3">Solutions</h2>
+        <ul class="space-y-2">
+          <li>Online Store</li>
+          <li>Online Booking</li>
+          <li>Restaurant Website</li>
+          <li>Blog Website</li>
+          <li>Portfolio Website</li>
+          <li>eCommerce Website</li>
+          <li>Wix Studio</li>
+          <li>Enterprise Solutions</li>
+          <li>Student Website</li>
+          <li>Professional Tools</li>
+          <li>Logo Maker</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold mb-3">Learn</h2>
+        <ul class="space-y-2">
+          <li>Wix Blog</li>
+          <li>Privacy and Security Hub</li>
+          <li>SEO Learning Hub</li>
+          <li>Wix Encyclopedia</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold mb-3">Support</h2>
+        <ul class="space-y-2">
+          <li>Help Center</li>
+          <li>Hire a Professional</li>
+          <li>Report Abuse</li>
+          <li>System Status</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold mb-3">Company</h2>
+        <ul class="space-y-2">
+          <li>Press & Media</li>
+          <li>Investor Relations</li>
+          <li>Wix Capital</li>
+          <li>Accessibility Statement</li>
+          <li>Patent Notice</li>
+          <li>Sitemap</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="border-t border-gray-200">
+    <div
+      class="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between text-xs text-gray-600"
+    >
+      <div class="flex space-x-6 justify-center sm:justify-start mb-2 sm:mb-0">
+        <a href="#" class="hover:underline">Terms of Use</a>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+      </div>
+      <div class="text-center sm:text-right">© 2006-2025 Wix.com, Inc</div>
+    </div>
+  </footer>
+</body>
+</html>
+          
